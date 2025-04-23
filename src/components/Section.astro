@@ -1,0 +1,70 @@
+---
+import { formatDate } from "@/lib/utils";
+
+import { type Education, info, type SkillCategory } from "@/info";
+
+type SectionType = "Formation" | "Expérience" | "Projets" | "Compétences";
+
+interface Props {
+  type: SectionType;
+}
+
+const props = Astro.props as Props;
+
+function getElements(type: SectionType) {
+  switch (type) {
+    case "Formation":
+      return info.education;
+    case "Expérience":
+      return info.experience;
+    case "Projets":
+      return info.projects;
+    case "Compétences":
+      return info.skills;
+    default:
+      throw new Error("Unknown section type");
+  }
+}
+
+const elements = getElements(props.type);
+---
+
+<section>
+  <h2 class="font-semibold uppercase border-b-2 text-lg mb-1">{props.type}</h2>
+
+  <div class="space-y-2">
+    {
+      props.type === "Formation" && (elements as Education[]).map((item) => (
+        <div>
+          <div class="flex justify-between items-baseline font-medium">
+            <h3 class="text-sm">
+              <a href={item.link} target="_blank" class="font-semibold text-base hover:underline">{item.name}</a>, {item.location}
+            </h3>
+            <p class="capitalize">
+              {formatDate(item.startDate)} - {formatDate(item.endDate)}
+            </p>
+          </div>
+          <div class="flex justify-between items-baseline text-sm">
+            <p>{item.diploma}; {item.minors.join(", ")}</p>
+            <p>{item.result}</p>
+          </div>
+          <p class="italic text-xs">
+            {item.coursework.join(", ")}
+          </p>
+        </div>
+      ))
+    }
+    {
+      props.type === "Compétences" && (
+        <div class="-space-y-1">
+          {(elements as SkillCategory[]).map((item) => (
+            <div class="flex gap-x-1 items-baseline">
+              <h3 class="font-semibold">{item.category} :</h3>
+              <p class="text-sm">{item.items.join(", ")}</p>
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</section>
