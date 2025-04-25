@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
 :root {
   --primary: oklch(1, 0, 0);
   --secondary: oklch(0.93 0.0806 155.99);
