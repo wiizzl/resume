@@ -40,21 +40,22 @@ const elements = getElements(props.type);
           <div>
             <div class="flex justify-between items-baseline font-medium">
               <h3 class="text-sm">
-                <a href={item.link} target="_blank" class="font-semibold text-base hover:underline">{item.name}</a>, {item.location}
+                <a href={item.link} target="_blank" class="font-semibold text-base hover:underline">
+                  {item.name}
+                </a>
+                , {item.location}
               </h3>
               <p class="capitalize">
                 {formatDate(item.startDate)} - {formatDate(item.endDate)}
               </p>
             </div>
             <div class="flex justify-between items-baseline text-sm">
-              <p>{item.diploma}; {item.minors.join(", ")}</p>
+              <p>
+                {item.diploma}; {item.minors.join(", ")}
+              </p>
               <p>{item.result}</p>
             </div>
-            {item.coursework && (
-              <p class="italic text-xs">
-                {item.coursework.join(", ")}
-              </p>
-            )}
+            {item.coursework && <p class="italic text-xs">{item.coursework.join(", ")}</p>}
           </div>
         ))}
       </div>
@@ -67,7 +68,10 @@ const elements = getElements(props.type);
           <div>
             <div class="flex justify-between items-baseline font-medium">
               <h3 class="font-semibold">
-                {item.position}, <a href={item.link} target="_blank" class="font-normal text-sm hover:underline">{item.company}</a>
+                {item.position},{" "}
+                <a href={item.link} target="_blank" class="font-normal text-sm hover:underline">
+                  {item.company}
+                </a>
               </h3>
               <p class="capitalize">
                 {formatDate(item.startDate)} - {item.endDate ? formatDate(item.endDate) : "Présent"}
@@ -76,18 +80,21 @@ const elements = getElements(props.type);
             <ul class="list-disc list-inside">
               {item.tasks.map((task) => (
                 <li>
-                    {typeof task === "string" ?
-                      task
-                    : <>
-                        {task.name}
-                        {task.link && (
-                          <>
-                            {" "}
-                            <a href={task.link} target="_blank" class="hover:underline">({task.link})</a>
-                          </>
-                        )}
-                      </>
-                    }
+                  {typeof task === "string" ? (
+                    task
+                  ) : (
+                    <>
+                      {task.name}
+                      {task.link && (
+                        <>
+                          {" "}
+                          <a href={task.link} target="_blank" class="hover:underline">
+                            ({task.link})
+                          </a>
+                        </>
+                      )}
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
@@ -103,15 +110,15 @@ const elements = getElements(props.type);
           <div>
             <div class="flex justify-between items-baseline font-medium">
               <h3 class="font-semibold">
-                <a href={item.link} target="_blank" class="font-normal text-sm hover:underline">{item.title}</a>
+                <a href={item.link} target="_blank" class="font-normal text-sm hover:underline">
+                  {item.title}
+                </a>
               </h3>
               <p class="capitalize">
                 {formatDate(item.startDate)} - {item.endDate ? formatDate(item.endDate) : "Présent"}
               </p>
             </div>
-            <p class="text-sm">
-              {item.description}
-            </p>
+            <p class="text-sm">{item.description}</p>
           </div>
         ))}
       </div>

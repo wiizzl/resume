@@ -117,8 +117,14 @@ const info: Info = {
       location: "Rouen",
       startDate: new Date("2023-11"),
       tasks: [
-        { name: "Développement d'un e-commerce d'art du papier", link: "https://folding-art.fr" },
-        { name: "Développement d'un e-commerce pour des peluches", link: "https://laine-maille.fr" },
+        {
+          name: "Développement d'un e-commerce d'art du papier",
+          link: "https://folding-art.fr",
+        },
+        {
+          name: "Développement d'un e-commerce pour des peluches",
+          link: "https://laine-maille.fr",
+        },
       ],
     },
   ],
@@ -140,15 +146,33 @@ const info: Info = {
     },
     {
       category: "Backend",
-      items: ["Node.js", "PHP (Laravel & Symfony)", "Python", "C# .NET", "Rust (Tauri)"],
+      items: [
+        "Node.js",
+        "PHP (Laravel & Symfony)",
+        "Python",
+        "C# .NET",
+        "Rust (Tauri)",
+      ],
     },
     {
       category: "Base de données",
-      items: ["MySQL", "PostgreSQL", "Redis", "MongoDB", "SQL", "ORM (Prisma, Drizzle, Entity Framework)"],
+      items: [
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "SQL",
+        "ORM (Prisma, Drizzle, Entity Framework)",
+      ],
     },
     {
       category: "Autre",
-      items: ["Machine learning", "Programmation orientée objet", "Docker", "Git"],
+      items: [
+        "Machine learning",
+        "Programmation orientée objet",
+        "Docker",
+        "Git",
+      ],
     },
   ],
 };

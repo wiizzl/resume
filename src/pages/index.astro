@@ -1,42 +1,42 @@
 ---
-import "@/styles/global.css"
+import "@/styles/global.css";
 
-import Section from "@/components/Section.astro"
+import Section from "@/components/Section.astro";
 
-import { info } from "@/info"
+import { info } from "@/info";
 ---
 
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>CV - {info.name}</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>CV - {info.name}</title>
+  </head>
 
-	<body class="antialiased h-full mx-auto w-full max-w-screen-lg px-6 md:px-20 py-16 md:py-24 selection:bg-secondary selection:text-primary">
-		<header class="mb-5">
-			<h1 class="text-3xl font-semibold text-center"><a href={info.contact.website} target="_blank">{info.name}</a></h1>
+  <body class="antialiased h-full mx-auto w-full max-w-screen-lg px-6 md:px-20 py-16 md:py-24 selection:bg-secondary selection:text-primary">
+    <header class="mb-5">
+      <h1 class="text-3xl font-semibold text-center"><a href={info.contact.website} target="_blank">{info.name}</a></h1>
 
-			<address class="flex flex-wrap justify-center gap-2 not-italic">
-				<span>{info.address.city}, {info.address.state}, {info.address.zip}</span>
-				<span class="hidden md:block">|</span>
-				<a href={`tel:${info.contact.phone.replace(/\./g, "")}`}>{info.contact.phone}</a>
-				<span class="hidden md:block">|</span>
-				<a href={`mailto:${info.contact.email}`}>{info.contact.email}</a>
-				<span class="hidden md:block">|</span>
-				<a href={info.contact.linkedin} target="_blank">
-					{info.contact.linkedin.split(".com")[1]}
-				</a>
-			</address>
-		</header>
+      <address class="flex flex-wrap justify-center gap-2 not-italic">
+        <span>{info.address.city}, {info.address.state}, {info.address.zip}</span>
+        <span class="hidden md:block">|</span>
+        <a href={`tel:${info.contact.phone.replace(/\./g, "")}`}>{info.contact.phone}</a>
+        <span class="hidden md:block">|</span>
+        <a href={`mailto:${info.contact.email}`}>{info.contact.email}</a>
+        <span class="hidden md:block">|</span>
+        <a href={info.contact.linkedin} target="_blank">
+          {info.contact.linkedin.split(".com")[1]}
+        </a>
+      </address>
+    </header>
 
-		<main class="space-y-4">
-			<Section type="Formation"/>
-			<Section type="Expérience"/>
-			<Section type="Projets"/>
-			<Section type="Compétences"/>
-		</main>
-	</body>
+    <main class="space-y-4">
+      <Section type="Formation" />
+      <Section type="Expérience" />
+      <Section type="Projets" />
+      <Section type="Compétences" />
+    </main>
+  </body>
 </html>
