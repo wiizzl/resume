@@ -9,8 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.5",
-    "astro-pdf": "^1.7.2"
+    "astro": "^5.7.5"
   },
   "devDependencies": {
     "tailwindcss": "^4.1.4",

@@ -1,5 +1,4 @@
 // @ts-check
-import pdf from "astro-pdf";
 import { defineConfig } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -9,18 +8,6 @@ export default defineConfig({
   integrations: [],
 
   vite: {
-    plugins: [
-      tailwindcss(),
-      pdf({
-        pages: {
-          "/": {
-            path: "cv.pdf",
-            pdf: {
-              format: "A4",
-            },
-          },
-        },
-      }),
-    ],
+    plugins: [tailwindcss()],
   },
 });
