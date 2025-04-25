@@ -1,4 +1,4 @@
-export interface Education {
+interface Education {
   name: string;
   link: string;
   location: string;
@@ -7,29 +7,38 @@ export interface Education {
   startDate: Date;
   endDate: Date;
   result: string;
-  coursework: string[];
+  coursework?: string[];
 }
 
-export interface Experience {
-  position: string;
+interface Experience {
   company: string;
+  link: string;
+  position: string;
   location: string;
-  period: string;
-  tasks?: string[];
+  startDate: Date;
+  endDate?: Date;
+  tasks:
+    | {
+        name: string;
+        link: string;
+      }[]
+    | string[];
 }
 
-export interface Project {
+interface Project {
   title: string;
   description: string;
-  link?: string;
+  link: string;
+  startDate: Date;
+  endDate?: Date;
 }
 
-export interface SkillCategory {
+interface Skill {
   category: string;
   items: string[];
 }
 
-export interface Info {
+interface Info {
   name: string;
   address: {
     city: string;
@@ -46,7 +55,7 @@ export interface Info {
   education: Education[];
   experience: Experience[];
   projects: Project[];
-  skills: SkillCategory[];
+  skills: Skill[];
 }
 
 const info: Info = {
@@ -84,10 +93,35 @@ const info: Info = {
       startDate: new Date("2021-09"),
       endDate: new Date("2024-07"),
       result: "Mention bien",
-      coursework: ["Développement d'applications web", "Application du RGPD"],
     },
   ],
-  experience: [],
+  experience: [
+    {
+      company: "WorldSkills Région Normandie",
+      link: "https://parcours-metier.normandie.fr/orientation/agence/la-48e-competition-worldskills-2024-2026",
+      position: "Compétiteur Web Technologies",
+      location: "Caen",
+      startDate: new Date("2024-11"),
+      endDate: new Date("2025-10"),
+      tasks: [
+        "Obtention de la première place (médaille d'or)",
+        "Qualification pour la finale nationale à Marseille Chanot du 16 au 18 octobre 2025.",
+        "Séances de préparations mentales et physiques.",
+        "Entraînement pour l'épreuve avec coach tout au long de l'année.",
+      ],
+    },
+    {
+      company: "Entrepreneur individuel (Freelance)",
+      link: "https://houlliere.com",
+      position: "Développeur Web",
+      location: "Rouen",
+      startDate: new Date("2023-11"),
+      tasks: [
+        { name: "Développement d'un e-commerce d'art du papier", link: "https://folding-art.fr" },
+        { name: "Développement d'un e-commerce pour des peluches", link: "https://laine-maille.fr" },
+      ],
+    },
+  ],
   projects: [],
   skills: [
     {
@@ -113,14 +147,11 @@ const info: Info = {
       items: ["MySQL", "PostgreSQL", "Redis", "MongoDB", "SQL", "ORM (Prisma, Drizzle, Entity Framework)"],
     },
     {
-      category: "Paradigmes de programmation",
-      items: ["Programmation orientée objet"],
-    },
-    {
       category: "Autre",
-      items: ["Machine learning"],
+      items: ["Machine learning", "Programmation orientée objet", "Docker", "Git"],
     },
   ],
 };
 
 export { info };
+export type { Education, Experience, Info, Project, Skill };
