@@ -2,8 +2,11 @@
 import "@/styles/global.css";
 
 import Print from "@/components/Print.astro";
-import Section from "@/components/Section.astro";
 
+import Education from "@/components/Education.astro";
+import Experience from "@/components/Experience.astro";
+import Projects from "@/components/Projects.astro";
+import Skills from "@/components/Skills.astro";
 import { info } from "@/info";
 ---
 
@@ -38,10 +41,10 @@ import { info } from "@/info";
     </header>
 
     <main class="space-y-4">
-      <Section type="Formation" />
-      <Section type="Expérience" />
-      <Section type="Projets" />
-      <Section type="Compétences" />
+      <Education />
+      <Experience />
+      <Projects />
+      <Skills />
     </main>
   </body>
 </html>

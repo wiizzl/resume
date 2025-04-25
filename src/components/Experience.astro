@@ -1,0 +1,50 @@
+---
+import Section from "@/components/Section.astro";
+
+import { formatDate } from "@/lib/utils";
+
+import { info } from "@/info";
+---
+
+<Section title="Expérience">
+  <div class="space-y-2">
+    {
+      info.experience.map((item) => (
+        <div>
+          <div class="flex justify-between items-baseline font-medium">
+            <h3 class="font-semibold">
+              {item.position},{" "}
+              <a href={item.link} target="_blank" class="font-normal text-sm hover:underline">
+                {item.company}
+              </a>
+            </h3>
+            <p class="capitalize">
+              {formatDate(item.startDate)} - {item.endDate ? formatDate(item.endDate) : "Présent"}
+            </p>
+          </div>
+          <ul class="list-disc list-inside">
+            {item.tasks.map((task) => (
+              <li>
+                {typeof task === "string" ? (
+                  task
+                ) : (
+                  <>
+                    {task.name}
+                    {task.link && (
+                      <>
+                        {" "}
+                        <a href={task.link} target="_blank" class="hover:underline">
+                          ({task.link})
+                        </a>
+                      </>
+                    )}
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</Section>

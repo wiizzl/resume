@@ -1,0 +1,18 @@
+---
+import Section from "@/components/Section.astro";
+
+import { info } from "@/info";
+---
+
+<Section title="Compétences">
+  <div class="-space-y-1">
+    {
+      info.skills.map((item) => (
+        <div class="flex gap-x-1 items-baseline">
+          <h3 class="font-semibold">{item.category} :</h3>
+          <p class="text-sm">{item.items.join(", ")}</p>
+        </div>
+      ))
+    }
+  </div>
+</Section>
