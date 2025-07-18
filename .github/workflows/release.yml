@@ -20,20 +20,19 @@ jobs:
         with:
           name: cv-output
           path: rendercv_output/
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
           run-id: ${{ github.event.workflow_run.id }}
 
       - name: Generate release tag
         id: tag
         run: |
-          echo "tag=v$(date +'%Y.%m.%d-%H%M')" >> $GITHUB_OUTPUT
-          echo "release_date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
+          echo "tag=v$(date +'%Y.%m.%d')-$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: ${{ steps.tag.outputs.tag }}
-          body: "Automated CV release generated on ${{ steps.tag.outputs.release_date }}"
+          body: |
+            This is an automated release of the latest CV build.
+            - Generated on: ${{ github.event.workflow_run.created_at }}
           files: rendercv_output/*
