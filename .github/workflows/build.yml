@@ -1,0 +1,28 @@
+name: Build CV
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync --locked --all-extras --dev
+
+      - name: Render CV
+        run: uv run rendercv render "Pierre_CV.yaml"
+
+      - name: Upload CV artifacts
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-output
+          path: rendercv_output/
+          retention-days: 7
