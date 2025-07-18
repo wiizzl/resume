@@ -26,14 +26,14 @@ jobs:
 
       - name: Generate release tag
         id: tag
-        run: echo "tag=v$(date +'%Y.%m.%d-%H%M')" >> $GITHUB_OUTPUT
+        run: |
+          echo "tag=v$(date +'%Y.%m.%d-%H%M')" >> $GITHUB_OUTPUT
+          echo "release_date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: ${{ steps.tag.outputs.tag }}
-          body: "Automated CV release generated on $(date +'%Y-%m-%d %H:%M')"
+          body: "Automated CV release generated on ${{ steps.tag.outputs.release_date }}"
           files: rendercv_output/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
