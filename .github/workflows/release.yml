@@ -20,6 +20,8 @@ jobs:
         with:
           name: cv-output
           path: rendercv_output/
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
           run-id: ${{ github.event.workflow_run.id }}
 
       - name: Generate release tag
