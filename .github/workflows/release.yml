@@ -37,4 +37,5 @@ jobs:
           body: |
             This is an automated release of the latest CV build.
             - Generated on: ${{ github.event.workflow_run.created_at }}
+            - Commit: [${{ github.event.workflow_run.head_sha }}](https://github.com/${{ github.repository }}/commit/${{ github.event.workflow_run.head_sha }})
           files: rendercv_output/*
