@@ -2,7 +2,11 @@ name: Build CV
 
 on:
   push:
+    paths:
+      - "Pierre_CV.yaml"
   pull_request:
+    paths:
+      - "Pierre_CV.yaml"
 
 jobs:
   build:
