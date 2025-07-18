@@ -1,6 +1,7 @@
 # resume
 
 ![Build workflow status](https://github.com/wiizzl/resume/actions/workflows/build.yml/badge.svg)
+![Release workflow status](https://github.com/wiizzl/resume/actions/workflows/release.yml/badge.svg)
 
 > This resume was generated using [https://rendercv.com/](RenderCV)
 
