@@ -3,7 +3,7 @@
 ![Build workflow status](https://github.com/wiizzl/resume/actions/workflows/build.yml/badge.svg)
 ![Release workflow status](https://github.com/wiizzl/resume/actions/workflows/release.yml/badge.svg)
 
-> This resume was generated using [https://rendercv.com/](RenderCV)
+> This resume was generated using [RenderCV](https://rendercv.com)
 
 ## Required
 
@@ -30,5 +30,5 @@ uv sync
 3. Render the CV
 
 ```
-rendercv render --watch "Pierre_CV.yaml"
+rendercv render --watch src/Pierre_CV.yaml
 ```
