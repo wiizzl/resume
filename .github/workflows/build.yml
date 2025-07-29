@@ -30,27 +30,19 @@ jobs:
             exit 1
           fi
           cd ..
-          uv run rendercv render src/$cv_file --pdf-path ${cv_file%.yaml}.pdf
+          uv run rendercv render src/$cv_file
+
+      - name: List generated files (debug)
+        run: |
+          echo "Files in current directory:"
+          ls -la
+          echo "Looking for rendercv_output:"
+          ls -la rendercv_output/ || echo "rendercv_output directory not found"
+          echo "Looking for other output directories:"
+          find . -name "*.pdf" -type f
 
       - name: Upload output as an artifact
         uses: actions/upload-artifact@v4
         with:
           name: RenderCV Output
           path: rendercv_output
-
-      - uses: dorny/paths-filter@v3
-        id: changes
-        with:
-          base: HEAD
-          filters: |
-            cv:
-              - '*_CV.typ'
-
-      - name: Push the changes
-        if: steps.changes.outputs.changes == 'true'
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -A
-          git commit -m "Render the latest CV"
-          git push
