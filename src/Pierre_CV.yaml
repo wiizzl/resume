@@ -1,19 +1,18 @@
 cv:
   name: Pierre Houllière
-  location: Rouen, France
   email: contact@houlliere.com
   phone: +33-6-11-77-62-00
   website: https://houlliere.com
   social_networks:
     - network: LinkedIn
       username: pierrehoulliere
-    # - network: GitHub
-    #   username: wiizzl
+    - network: GitHub
+      username: wiizzl
   sections:
     # profil:
     #   - Passionné par l'innovation technologique et le développement logiciel, je m'épanouis à explorer de nouveaux langages, frameworks et méthodologies. Curieux et rigoureux, j'aime concevoir des solutions élégantes à des problématiques complexes.
     éducation:
-      - institution: Campus La Chataîgneraie
+      - institution: Campus La Châtaigneraie
         area: SLAM
         degree: BTS SIO
         start_date: 2024-09
@@ -25,7 +24,7 @@ cv:
           - "Développement de l'application de vote du concours d'éloquence du campus"
       - institution: Lycée Galilée
         area: Maths. et Sciences de l'Ingénieur
-        degree: BAC. général
+        degree: Bac général
         start_date: 2021-09
         end_date: 2024-07
         location: Franqueville-St-Pierre
@@ -35,22 +34,17 @@ cv:
           - "Lauréat aux Olympiades de Sciences de l'Ingénieur 2024 (Normandie)"
           - "Développement d'une plateforme de révision pour les élèves de la spécialité S.I."
     expérience:
-      - company: laine & maille
+      - company: "[laine & maille](https://laine-maille.fr)"
         position: Développeur Full Stack
         start_date: 2025-01
         location: À distance
-        summary: Développement et maintenance du site e-commerce. -- laine-maille.fr
-      - company: FOLDING-ART
-        position: Développeur Full Stack
-        start_date: 2024-07
-        location: À distance
-        summary: Développement et maintenance du site e-commerce. -- folding-art.fr
-      - company: WorldSkills France
+        summary: Développement et maintenance du site e-commerce.
+      - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
         position: Compétiteur
         date: 2025-10
         location: Marseille
-        summary: Participation aux finales nationales de la compétition WorldSkills dans la catégorie Web Technologies
-      - company: Overspeed
+        summary: Participation aux finales nationales de la compétition WorldSkills dans la catégorie Web Technologies.
+      - company: "[Overspeed](https://overspeed.fr)"
         position: Développeur Full Stack
         date: 2025-08
         location: Rouen
@@ -58,7 +52,13 @@ cv:
         highlights:
           - Finalisation du micro-CMS de l'entreprise
           - Préparation au déploiement en production
-      - company: Overspeed
+      - company: "[FOLDING-ART](https://folding-art.fr)"
+        position: Développeur Full Stack
+        start_date: 2024-07
+        end_date: 2025-08
+        location: À distance
+        summary: Développement et maintenance du site e-commerce.
+      - company: "[Overspeed](https://overspeed.fr)"
         position: Stagiaire Développeur Full Stack
         start_date: 2025-05
         end_date: 2025-06
@@ -66,18 +66,25 @@ cv:
         summary: Stage de première année de BTS SIO.
         highlights:
           - Développement d'un micro-CMS avec Next.js pour gérer le contenu des appareils de la gamme l'Aura des Villes
-      - company: WorldSkills Normandie
+      - company: "[WorldSkills Normandie](https://parcours-metier.normandie.fr/orientation/agence/la-48e-competition-worldskills-2024-2026)"
         position: Compétiteur
         date: 2024-11
         location: Caen
-        summary: Obtention de la médaille d'or aux sélections régionales Normandes pour la compétition WorldSkills
+        summary: Obtention de la médaille d'or aux sélections régionales normandes pour la compétition WorldSkills
         highlights:
           - Sélectionné comme compétiteur dans l'équipe Normande pour la catégorie Web Technologies lors des finales nationales à Marseille en Octobre 2025
           - Préparation physique, mentale et technique tout au long de l'année avec des coachs
-    # projets:
-    #   - name: "[Nobel Explorer](https://github.com/wiizzl/nobel-explorer)"
-    #     date: 2024-04
-    #     summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
+    projets:
+      - name: "[CV dynamique](https://github.com/wiizzl/resume)"
+        date: 2025-07
+        summary: Génération de ce CV de manière dynamique grâce à la CI/CD de GitHub Actions.
+      - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
+        date: 2025-04
+        summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
+      - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
+        start_date: 2024-01
+        end_date: 2024-05
+        summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
     compétences:
       - label: Frontend
         details: HTML, CSS, Sass, TailwindCSS, UnoCSS, JavaScript, TypeScript, React.js (Next.js), Vue.js (Nuxt.js), React Native (Expo)
@@ -87,7 +94,7 @@ cv:
         details: MySQL, PostgreSQL, MongoDB, Redis, SQL, Transact-SQL, ORM (Prisma, Drizzle, Entity Framework)
       - label: DevOps & Outils
         details: Docker, Podman, Git, GitHub Actions, Jenkins, Linux (utilisation quotidienne de Fedora)
-    langage:
+    langues:
       - bullet: Français (natif)
       - bullet: Anglais (B2)
       - bullet: Allemand (A2)
