@@ -86,14 +86,16 @@ cv:
         end_date: 2024-05
         summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
     compétences:
-      - label: Frontend
-        details: HTML, CSS, Sass, TailwindCSS, UnoCSS, JavaScript, TypeScript, React.js (Next.js), Vue.js (Nuxt.js), React Native (Expo)
-      - label: Backend
-        details: Node.js, Bun, PHP (Laravel, Symfony), Python, C# (.NET), Rust (Tauri)
-      - label: Databases
-        details: MySQL, PostgreSQL, MongoDB, Redis, SQL, Transact-SQL, ORM (Prisma, Drizzle, Entity Framework)
-      - label: DevOps & Outils
-        details: Docker, Podman, Git, GitHub Actions, Jenkins, Linux (utilisation quotidienne de Fedora)
+      - label: Langages
+        details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS
+      - label: Frameworks & Technologies
+        details: React.js (Next.js), React Native (Expo), Node.js, Bun, Laravel, Symfony, .NET, Tauri, Docker, Podman, Kubernetes, Pytorch
+      - label: Librairies
+        details: Sass, TailwindCSS, UnoCSS, Prisma, Drizzle, Entity Framework
+      - label: Outils & DevOps
+        details: Git, GitHub Actions, Jenkins, Linux (utilisation quotidienne de Fedora)
+      - label: Bases de données
+        details: SQL, Transact-SQL, MySQL, PostgreSQL, Redis, MongoDB
     langues:
       - bullet: Français (natif)
       - bullet: Anglais (B2)
