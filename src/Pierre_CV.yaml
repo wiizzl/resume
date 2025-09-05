@@ -74,17 +74,17 @@ cv:
         highlights:
           - Sélectionné comme compétiteur dans l'équipe Normande pour la catégorie Web Technologies lors des finales nationales à Marseille en Octobre 2025
           - Préparation physique, mentale et technique tout au long de l'année avec des coachs
-    projets:
-      - name: "[CV dynamique](https://github.com/wiizzl/resume)"
-        date: 2025-07
-        summary: Génération de ce CV de manière dynamique grâce à la CI/CD de GitHub Actions.
-      - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
-        date: 2025-04
-        summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
-      - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
-        start_date: 2024-01
-        end_date: 2024-05
-        summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
+    # projets:
+    #   - name: "[CV dynamique](https://github.com/wiizzl/resume)"
+    #     date: 2025-07
+    #     summary: Génération de ce CV de manière dynamique grâce à la CI/CD de GitHub Actions.
+    #   - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
+    #     date: 2025-04
+    #     summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
+    #   - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
+    #     start_date: 2024-01
+    #     end_date: 2024-05
+    #     summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
     compétences:
       - label: Langages
         details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS
