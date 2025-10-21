@@ -11,47 +11,29 @@ cv:
   sections:
     # profil:
     #   - Passionné par l'innovation technologique et le développement logiciel, je m'épanouis à explorer de nouveaux langages, frameworks et méthodologies. Curieux et rigoureux, j'aime concevoir des solutions élégantes à des problématiques complexes.
-    éducation:
-      - institution: Campus La Châtaigneraie
-        area: SLAM
-        degree: BTS SIO
-        start_date: 2024-09
-        end_date: 2026-07
-        location: Le Mesnil-Esnard
-        highlights:
-          - Délégué de classe
-          - Création de travaux pratiques pour le cours de Développement de services informatiques
-          - "Développement de l'application de vote du concours d'éloquence du campus"
-      - institution: Lycée Galilée
-        area: Maths. et Sciences de l'Ingénieur
-        degree: Bac général
-        start_date: 2021-09
-        end_date: 2024-07
-        location: Franqueville-St-Pierre
-        summary:
-        highlights:
-          - Obtention de la mention Bien
-          - "Lauréat aux Olympiades de Sciences de l'Ingénieur 2024 (Normandie)"
-          - "Développement d'une plateforme de révision pour les élèves de la spécialité S.I."
-    expérience:
-      - company: "[laine & maille](https://laine-maille.fr)"
-        position: Développeur Full Stack
-        start_date: 2025-01
-        location: À distance
-        summary: Développement et maintenance du site e-commerce.
+    expériences:
       - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
         position: Compétiteur
         date: 2025-10
         location: Marseille
-        summary: Participation aux finales nationales de la compétition WorldSkills dans la catégorie Web Technologies.
+        summary: Obtention de la médaille d'argent à la finale nationale.
+        highlights:
+          - Vice-Champion de France en développement web, récompensé pour l'excellence technique et la créativité sous pression.
+          - Représentation de la région Normandie dans un environnement exigeant, face aux meilleurs talents nationaux.
+      - company: "[laine & maille](https://laine-maille.fr)"
+        position: Développeur Full Stack
+        start_date: 2025-01
+        end_date: 2025-09
+        location: À distance
+        summary: Développement et maintenance du site e-commerce.
       - company: "[Overspeed](https://overspeed.fr)"
         position: Développeur Full Stack
         date: 2025-08
         location: Rouen
         summary: Rappelé pour continuer le travail démarré lors de mon stage.
         highlights:
-          - Finalisation du micro-CMS de l'entreprise
-          - Préparation au déploiement en production
+          - Finalisation du micro-CMS de l'entreprise.
+          - Préparation au déploiement en production.
       - company: "[FOLDING-ART](https://folding-art.fr)"
         position: Développeur Full Stack
         start_date: 2024-07
@@ -65,26 +47,15 @@ cv:
         location: Rouen
         summary: Stage de première année de BTS SIO.
         highlights:
-          - Développement d'un micro-CMS avec Next.js pour gérer le contenu des appareils de la gamme l'Aura des Villes
+          - Développement d'un micro-CMS avec Next.js pour gérer le contenu des appareils de la gamme l'Aura des Villes.
       - company: "[WorldSkills Normandie](https://parcours-metier.normandie.fr/orientation/agence/la-48e-competition-worldskills-2024-2026)"
         position: Compétiteur
         date: 2024-11
         location: Caen
-        summary: Obtention de la médaille d'or aux sélections régionales normandes pour la compétition WorldSkills
+        summary: Obtention de la médaille d'or aux sélections régionales normandes.
         highlights:
-          - Sélectionné comme compétiteur dans l'équipe Normande pour la catégorie Web Technologies lors des finales nationales à Marseille en Octobre 2025
-          - Préparation physique, mentale et technique tout au long de l'année avec des coachs
-    # projets:
-    #   - name: "[CV dynamique](https://github.com/wiizzl/resume)"
-    #     date: 2025-07
-    #     summary: Génération de ce CV de manière dynamique grâce à la CI/CD de GitHub Actions.
-    #   - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
-    #     date: 2025-04
-    #     summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
-    #   - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
-    #     start_date: 2024-01
-    #     end_date: 2024-05
-    #     summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
+          - Champion régional en développement web, sélectionné pour représenter la Normandie à la finale nationale.
+          - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
     compétences:
       - label: Langages
         details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS
@@ -96,6 +67,39 @@ cv:
         details: Git, GitHub Actions, Jenkins, Linux (utilisation quotidienne de Fedora)
       - label: Bases de données
         details: SQL, Transact-SQL, MySQL, PostgreSQL, Redis, MongoDB
+    formations:
+      - institution: Campus La Châtaigneraie
+        area: SLAM
+        degree: BTS SIO
+        start_date: 2024-09
+        end_date: 2026-07
+        location: Le Mesnil-Esnard
+        highlights:
+          - Délégué de classe.
+          - Création de travaux pratiques pour le cours de Développement de services informatiques.
+          - "Développement de l'application de vote du concours d'éloquence du campus."
+      - institution: Lycée Galilée
+        area: Maths. et Sciences de l'Ingénieur
+        degree: Bac général
+        start_date: 2021-09
+        end_date: 2024-07
+        location: Franqueville-St-Pierre
+        summary:
+        highlights:
+          - Obtention de la mention Bien.
+          - "Lauréat aux Olympiades de Sciences de l'Ingénieur 2024 (Normandie)."
+          - "Développement d'une plateforme de révision pour les élèves de la spécialité S.I."
+    # projets:
+    #   - name: "[CV dynamique](https://github.com/wiizzl/resume)"
+    #     date: 2025-07
+    #     summary: Génération de ce CV de manière dynamique grâce à la CI/CD de GitHub Actions.
+    #   - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
+    #     date: 2025-04
+    #     summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
+    #   - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
+    #     start_date: 2024-01
+    #     end_date: 2024-05
+    #     summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
     langues:
       - bullet: Français (natif)
       - bullet: Anglais (B2)
@@ -105,7 +109,7 @@ design:
   page:
     size: us-letter
     top_margin: 1cm
-    bottom_margin: 1cm
+    bottom_margin: 0.5cm
     left_margin: 2cm
     right_margin: 2cm
     show_page_numbering: false
