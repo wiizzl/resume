@@ -64,7 +64,7 @@ cv:
       - label: Librairies
         details: Sass, TailwindCSS, UnoCSS, Prisma, Drizzle, Entity Framework
       - label: Outils & DevOps
-        details: Git, GitHub Actions, Jenkins, Kubernetes, Linux (utilisation quotidienne de Fedora)
+        details: Git, GitHub Actions, Jenkins, Kubernetes, Linux (utilisation quotidienne de NixOS)
       - label: Bases de données
         details: SQL Server, MySQL, PostgreSQL, Redis, MongoDB
     formations:
