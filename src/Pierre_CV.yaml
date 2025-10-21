@@ -60,11 +60,11 @@ cv:
       - label: Langages
         details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS
       - label: Frameworks & Technologies
-        details: React.js (Next.js), React Native (Expo), Node.js, Bun, Laravel, Symfony, .NET, Tauri, Docker, Podman, Kubernetes, Pytorch
+        details: React.js (Next.js), React Native (Expo), Node.js, Bun, Laravel, Symfony, .NET, Tauri, Docker, Podman, Pytorch
       - label: Librairies
         details: Sass, TailwindCSS, UnoCSS, Prisma, Drizzle, Entity Framework
       - label: Outils & DevOps
-        details: Git, GitHub Actions, Jenkins, Linux (utilisation quotidienne de Fedora)
+        details: Git, GitHub Actions, Jenkins, Kubernetes, Linux (utilisation quotidienne de Fedora)
       - label: Bases de données
         details: SQL, Transact-SQL, MySQL, PostgreSQL, Redis, MongoDB
     formations:
