@@ -58,7 +58,7 @@ cv:
           - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
     compétences:
       - label: Langages
-        details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS
+        details: JavaScript, TypeScript, PHP, Python, C#, Rust, HTML, CSS, SQL, Transact-SQL
       - label: Frameworks & Technologies
         details: React.js (Next.js), React Native (Expo), Node.js, Bun, Laravel, Symfony, .NET, Tauri, Docker, Podman, Pytorch
       - label: Librairies
@@ -66,7 +66,7 @@ cv:
       - label: Outils & DevOps
         details: Git, GitHub Actions, Jenkins, Kubernetes, Linux (utilisation quotidienne de Fedora)
       - label: Bases de données
-        details: SQL, Transact-SQL, MySQL, PostgreSQL, Redis, MongoDB
+        details: SQL Server, MySQL, PostgreSQL, Redis, MongoDB
     formations:
       - institution: Campus La Châtaigneraie
         area: SLAM
