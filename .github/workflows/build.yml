@@ -32,15 +32,6 @@ jobs:
           cd ..
           uv run rendercv render src/$cv_file
 
-      - name: List generated files (debug)
-        run: |
-          echo "Files in current directory:"
-          ls -la
-          echo "Looking for rendercv_output:"
-          ls -la rendercv_output/ || echo "rendercv_output directory not found"
-          echo "Looking for other output directories:"
-          find . -name "*.pdf" -type f
-
       - name: Upload output as an artifact
         uses: actions/upload-artifact@v4
         with:
