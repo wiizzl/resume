@@ -11,10 +11,10 @@
 
 ## How to run
 
-1. Create virtual environment using python 3.13 and enable it
+1. Create virtual environment and enable it
 
 ```
-uv venv --python 3.13
+uv venv
 ```
 
 ```
