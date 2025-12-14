@@ -314,7 +314,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "rendercv", extras = ["full"], specifier = ">=2.5" }]
+requires-dist = [{ name = "rendercv", extras = ["full"], specifier = "==2.5" }]
 
 [[package]]
 name = "rich"
