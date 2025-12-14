@@ -12,11 +12,12 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v7
 
       - name: Install dependencies
         run: uv sync --locked --all-extras --dev
@@ -33,7 +34,7 @@ jobs:
           uv run rendercv render src/$cv_file
 
       - name: Upload output as an artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
-          name: RenderCV Output
-          path: rendercv_output
+          name: rendercv_output
+          path: src/rendercv_output
