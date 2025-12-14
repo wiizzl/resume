@@ -1,16 +1,17 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
 cv:
   name: Pierre Houllière
   email: contact@houlliere.com
   phone: +33-6-11-77-62-00
   website: https://houlliere.com
+
   social_networks:
     - network: LinkedIn
       username: pierrehoulliere
     - network: GitHub
       username: wiizzl
+
   sections:
-    # profil:
-    #   - Passionné par l'innovation technologique et le développement logiciel, je m'épanouis à explorer de nouveaux langages, frameworks et méthodologies. Curieux et rigoureux, j'aime concevoir des solutions élégantes à des problématiques complexes.
     expériences:
       - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
         position: Compétiteur
@@ -20,12 +21,14 @@ cv:
         highlights:
           - Vice-Champion de France en développement web (-21 ans), récompensé pour l'excellence technique et la créativité sous pression.
           - Représentation de la région Normandie dans un environnement exigeant, face aux meilleurs talents nationaux.
+
       - company: "[laine & maille](https://laine-maille.fr)"
         position: Développeur Full Stack
         start_date: 2025-01
         end_date: 2025-09
         location: À distance
         summary: Développement et maintenance du site e-commerce.
+
       - company: "[Overspeed](https://overspeed.fr)"
         position: Développeur Full Stack
         date: 2025-08
@@ -34,12 +37,14 @@ cv:
         highlights:
           - Finalisation du micro-CMS de l'entreprise.
           - Préparation au déploiement en production.
+
       - company: "[FOLDING-ART](https://folding-art.fr)"
         position: Développeur Full Stack
         start_date: 2024-07
         end_date: 2025-08
         location: À distance
         summary: Développement et maintenance du site e-commerce.
+
       - company: "[Overspeed](https://overspeed.fr)"
         position: Stagiaire Développeur Full Stack
         start_date: 2025-05
@@ -48,6 +53,7 @@ cv:
         summary: Stage de première année de BTS SIO.
         highlights:
           - Développement d'un micro-CMS avec Next.js pour gérer le contenu des appareils de la gamme l'Aura des Villes.
+
       - company: "[WorldSkills Normandie](https://parcours-metier.normandie.fr/orientation/agence/la-48e-competition-worldskills-2024-2026)"
         position: Compétiteur
         date: 2024-11
@@ -56,26 +62,34 @@ cv:
         highlights:
           - Champion régional en développement web, sélectionné pour représenter la Normandie à la finale nationale.
           - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
+
     compétences:
       - label: Langages
         details: JavaScript, TypeScript, PHP, Python, C#, Go, HTML/CSS, SQL
+
       - label: Frameworks
         details: React, React Native, Node, Bun, Laravel, Pytorch, Tauri, .NET
+
       - label: Outils de développement
         details: Git, Docker, Kubernetes, Jenkins, Linux (utilisation quotidienne de NixOS)
+
       - label: Bases de données
         details: PostgreSQL, MySQL, SQL Server, Redis, MongoDB
+
     projets:
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
         date: 2025-07
         summary: Génération de ce CV de manière dynamique avec une pipeline CI/CD.
-      - name: "[Nobel Explorer](https://nobel-explorer-eight.vercel.app)"
-        date: 2025-04
-        summary: Application web permettant d'explorer les prix nobels et les lauréats avec des filtres de recherche avancés.
+
+      - name: "[secure_chat](https://secure-chat-black.vercel.app/)"
+        date: 2025-12
+        summary: Canal de discussion sécurisée et temporaire en temps réel.
+
       - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
         start_date: 2024-01
         end_date: 2024-05
         summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
+
     formations:
       - institution: Campus La Châtaigneraie
         area: SLAM
@@ -87,6 +101,7 @@ cv:
           - Option mathématiques approdondis.
           - Création de travaux pratiques pour le cours de Développement de services informatiques.
           - "Développement de l'application de vote du concours d'éloquence du campus."
+
       - institution: Lycée Galilée
         area: Maths. et Sciences de l'Ingénieur
         degree: Bac général
@@ -97,117 +112,149 @@ cv:
           - Obtention de la mention Bien.
           - "Lauréat aux Olympiades de Sciences de l'Ingénieur 2024 (Normandie)."
           - "Développement d'une plateforme de révision pour les élèves de la spécialité S.I."
+
 design:
   theme: engineeringresumes
+
   page:
     size: us-letter
-    top_margin: 1cm
-    bottom_margin: 0.5cm
-    left_margin: 2cm
-    right_margin: 2cm
-    show_page_numbering: false
-    show_last_updated_date: true
+    top_margin: 0.4in
+    bottom_margin: 0.2in
+    left_margin: 0.7in
+    right_margin: 0.7in
+    show_footer: false
+    show_top_note: true
+
   colors:
-    text: rgb(0, 0, 0)
+    body: rgb(0, 0, 0)
     name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
     connections: rgb(0, 0, 0)
     section_titles: rgb(0, 0, 0)
     links: rgb(0, 0, 0)
-    last_updated_date_and_page_numbering: rgb(128, 128, 128)
-  text:
-    font_family: XCharter
-    font_size: 10pt
-    leading: 0.6em
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+
+  typography:
+    line_spacing: 0.4em
     alignment: justified
     date_and_location_column_alignment: right
+    font_family:
+      body: XCharter
+      name: XCharter
+      headline: XCharter
+      connections: XCharter
+      section_titles: XCharter
+    font_size:
+      body: 10pt
+      name: 25pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.2em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: true
+    bold:
+      name: false
+      headline: false
+      connections: false
+      section_titles: true
   links:
     underline: false
-    use_external_link_icon: true
+    show_external_link_icon: true
+
   header:
-    name_font_family: XCharter
-    name_font_size: 25pt
-    name_bold: false
-    photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.5cm
-    vertical_space_between_connections_and_first_section: 0.5cm
-    horizontal_space_between_connections: 0.5cm
-    connections_font_family: XCharter
-    separator_between_connections: "|"
-    use_icons_for_connections: true
     alignment: center
+    photo_width: 3.5cm
+    photo_position: left
+    photo_space_left: 0.4cm
+    photo_space_right: 0.4cm
+    space_below_name: 0.7cm
+    space_below_headline: 0.7cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: national
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: "|"
+      space_between_connections: 0.5cm
+
   section_titles:
-    type: with-full-line
-    font_family: XCharter
-    font_size: 1.2em
-    bold: false
-    small_caps: true
+    type: with_full_line
     line_thickness: 0.5pt
-    vertical_space_above: 0.55cm
-    vertical_space_below: 0.3cm
+    space_above: 0.6cm
+    space_below: 0.3cm
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.25cm
+    space_between_text_based_entries: 0.15cm
+    show_time_spans_in: []
+
   entries:
     date_and_location_width: 4.15cm
-    left_and_right_margin: 0cm
-    horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 0.4cm
-    allow_page_break_in_sections: true
-    allow_page_break_in_entries: true
+    side_space: 0cm
+    space_between_columns: 0.1cm
+    allow_page_break: false
     short_second_row: false
-    show_time_spans_in: []
-  highlights:
-    bullet: •
-    top_margin: 0.25cm
-    left_margin: 0cm
-    vertical_space_between_highlights: 0.19cm
-    horizontal_space_between_bullet_and_highlight: 0.3em
-    summary_left_margin: 0cm
-  entry_types:
+    summary:
+      space_above: 0.08cm
+      space_left: 0cm
+    highlights:
+      bullet: •
+      nested_bullet: •
+      space_left: 0cm
+      space_above: 0.08cm
+      space_between_items: 0.08cm
+      space_between_bullet_and_text: 0.3em
+
+  templates:
+    footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
+    top_note: "*LAST_UPDATED CURRENT_DATE*"
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     one_line_entry:
-      template: "**LABEL:** DETAILS"
+      main_column: "**LABEL:** DETAILS"
     education_entry:
-      main_column_first_row_template: "**INSTITUTION**, DEGREE (AREA) -- LOCATION"
-      degree_column_template:
-      degree_column_width: 1cm
-      main_column_second_row_template: |-
+      main_column: |-
+        **INSTITUTION**, DEGREE (AREA) -- LOCATION
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      degree_column:
+      date_and_location_column: DATE
     normal_entry:
-      main_column_first_row_template: "**NAME** -- **LOCATION**"
-      main_column_second_row_template: |-
+      main_column: |-
+        **NAME** -- **LOCATION**
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      date_and_location_column: DATE
     experience_entry:
-      main_column_first_row_template: "**POSITION**, COMPANY -- LOCATION"
-      main_column_second_row_template: |-
+      main_column: |-
+        **POSITION**, COMPANY -- LOCATION
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      date_and_location_column: DATE
     publication_entry:
-      main_column_first_row_template: "**TITLE**"
-      main_column_second_row_template: |-
+      main_column: |-
+        **TITLE**
+        SUMMARY
         AUTHORS
         URL (JOURNAL)
-      main_column_second_row_without_journal_template: |-
-        AUTHORS
-        URL
-      main_column_second_row_without_url_template: |-
-        AUTHORS
-        JOURNAL
-      date_and_location_column_template: DATE
+      date_and_location_column: DATE
+
 locale:
-  language: fr
-  phone_number_format: national
-  page_numbering_template: NAME - Page PAGE_NUMBER sur TOTAL_PAGES
-  last_updated_date_template: Mis à jour en TODAY
-  date_template: MONTH_ABBREVIATION YEAR
+  language: french
+  last_updated: Mis à jour en
   month: mois
   months: mois
   year: année
   years: années
   present: Présent
-  to: –
-  abbreviations_for_months:
+  month_abbreviations:
     - Janv.
     - Févr.
     - Mars
@@ -220,7 +267,7 @@ locale:
     - Oct.
     - Nov.
     - Déc.
-  full_names_of_months:
+  month_names:
     - Janvier
     - Février
     - Mars
@@ -233,6 +280,20 @@ locale:
     - Octobre
     - Novembre
     - Décembre
-rendercv_settings:
+
+settings:
+  # current_date: "2025-12-14"
   render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
   bold_keywords: []
