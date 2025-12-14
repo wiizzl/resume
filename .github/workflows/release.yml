@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     tags:
-      - "*" # Any tag pushed to the repository
+      - "*" # any tag pushed to the repository
 
 permissions:
   contents: write
@@ -12,22 +12,24 @@ jobs:
   call_build_workflow:
     name: RenderCV
     uses: ./.github/workflows/build.yml
+
   release:
     needs: call_build_workflow
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download RenderCV Output
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
-          name: RenderCV Output
-          path: rendercv_output
+          name: rendercv_output
+          path: src/rendercv_output
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: rendercv_output/*
+          files: src/rendercv_output/*
           generate_release_notes: true
           make_latest: true
