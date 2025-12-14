@@ -77,13 +77,13 @@ cv:
         details: PostgreSQL, MySQL, SQL Server, Redis, MongoDB
 
     projets:
-      - name: "[CV dynamique](https://github.com/wiizzl/resume)"
-        date: 2025-07
-        summary: Génération de ce CV de manière dynamique avec une pipeline CI/CD.
-
       - name: "[secure_chat](https://secure-chat-black.vercel.app/)"
         date: 2025-12
         summary: Canal de discussion sécurisée et temporaire en temps réel.
+
+      - name: "[CV dynamique](https://github.com/wiizzl/resume)"
+        date: 2025-07
+        summary: Génération de ce CV de manière dynamique avec une pipeline CI/CD.
 
       - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
         start_date: 2024-01
