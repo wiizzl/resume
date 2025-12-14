@@ -9,5 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
-# RenderCV
-rendercv_output/
+# RenderCV output
+src/rendercv_output
+
+# direnv
+.direnv/
