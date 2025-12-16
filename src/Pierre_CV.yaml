@@ -65,7 +65,7 @@ cv:
 
     compétences:
       - label: Langages
-        details: JavaScript, TypeScript, PHP, Python, C#, Go, HTML/CSS, SQL
+        details: JavaScript, TypeScript, PHP, Python, C#, Go, HTML/CSS, SQL/T-SQL
 
       - label: Frameworks
         details: React, React Native, Node, Bun, Laravel, Pytorch, Tauri, .NET
@@ -74,21 +74,24 @@ cv:
         details: Git, Docker, Kubernetes, Jenkins, Linux (utilisation quotidienne de NixOS)
 
       - label: Bases de données
-        details: PostgreSQL, MySQL, SQL Server, Redis, MongoDB
+        details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
 
     projets:
       - name: "[secure_chat](https://secure-chat-black.vercel.app)"
         date: 2025-12
         summary: Canal de discussion sécurisée et temporaire en temps réel.
+        technologies: React, Next.js, Redis, Elysia, Bun
 
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
         date: 2025-07
         summary: Génération de ce CV de manière dynamique avec une pipeline CI/CD.
+        technologies: Python, RenderCV, GitHub CI/CD
 
       - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
         start_date: 2024-01
         end_date: 2024-05
         summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
+        technologies: React Native, Expo, Socket.IO
 
     formations:
       - institution: Campus La Châtaigneraie
@@ -228,7 +231,7 @@ design:
       date_and_location_column: DATE
     normal_entry:
       main_column: |-
-        **NAME** -- **LOCATION**
+        **NAME** -- TECHNOLOGIES
         SUMMARY
         HIGHLIGHTS
       date_and_location_column: DATE
