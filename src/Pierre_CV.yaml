@@ -77,7 +77,7 @@ cv:
         details: PostgreSQL, MySQL, SQL Server, Redis, MongoDB
 
     projets:
-      - name: "[secure_chat](https://secure-chat-black.vercel.app/)"
+      - name: "[secure_chat](https://secure-chat-black.vercel.app)"
         date: 2025-12
         summary: Canal de discussion sécurisée et temporaire en temps réel.
 
@@ -183,7 +183,7 @@ design:
       space_between_connections: 0.5cm
 
   section_titles:
-    type: with_full_line
+    type: with_partial_line
     line_thickness: 0.5pt
     space_above: 0.6cm
     space_below: 0.3cm
@@ -282,18 +282,14 @@ locale:
     - Décembre
 
 settings:
-  # current_date: "2025-12-14"
   render_command:
     design:
     locale:
     typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
     pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
-    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
-    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
-    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
-    dont_generate_markdown: false
-    dont_generate_html: false
+    dont_generate_markdown: true
+    dont_generate_html: true
     dont_generate_typst: false
     dont_generate_pdf: false
-    dont_generate_png: false
+    dont_generate_png: true
   bold_keywords: []
