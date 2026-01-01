@@ -13,6 +13,13 @@ cv:
 
   sections:
     expériences:
+      - company: "[Matmut](https://www.matmut.fr/groupe-matmut/qui-sommes-nous.html)"
+        position: Stagiaire Développeur Full Stack
+        start_date: 2026-01
+        end_date: 2026-02
+        location: Rouen
+        summary: Stage de deuxième année de BTS SIO.
+
       - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
         position: Compétiteur
         date: 2025-10
