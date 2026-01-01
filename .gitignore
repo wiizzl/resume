@@ -11,6 +11,3 @@ wheels/
 
 # RenderCV Output
 src/rendercv_output
-
-# direnv
-.direnv/
