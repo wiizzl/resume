@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Pierre Houllière
   email: contact@houlliere.com
@@ -78,7 +78,7 @@ cv:
         details: React, React Native, Node, Bun, Laravel, Pytorch, Tauri, .NET
 
       - label: Outils de développement
-        details: Git, Docker, Kubernetes, Jenkins, Linux (utilisation quotidienne de NixOS)
+        details: Git, Docker, Kubernetes, Jenkins, Linux (utilisation quotidienne de Arch Linux)
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
