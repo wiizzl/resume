@@ -19,6 +19,9 @@ cv:
         end_date: 2026-02
         location: Rouen
         summary: Stage de deuxième année de BTS SIO.
+        highlights:
+          - Mise en place de l'environnement de tests e2e (régression visuelle, …) du design system.
+          - Développement d'un interface de monitoring des fichiers bundle du design system.
 
       - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
         position: Compétiteur
@@ -110,7 +113,7 @@ cv:
         highlights:
           - Option mathématiques approdondis.
           - Création de travaux pratiques pour le cours de Développement de services informatiques.
-          - "Développement de l'application de vote du concours d'éloquence du campus."
+          - Développement de l'application de vote du concours d'éloquence du campus.
 
       - institution: Lycée Galilée
         area: Maths. et Sciences de l'Ingénieur
@@ -120,18 +123,18 @@ cv:
         location: Franqueville-St-Pierre
         highlights:
           - Obtention de la mention Bien.
-          - "Lauréat aux Olympiades de Sciences de l'Ingénieur 2024 (Normandie)."
-          - "Développement d'une plateforme de révision pour les élèves de la spécialité S.I."
+          - Lauréat des Olympiades de Sciences de l'Ingénieur 2024 (Normandie).
+          - Développement d'une plateforme de révision pour les élèves de la spécialité S.I.
 
 design:
   theme: engineeringresumes
 
   page:
     size: us-letter
-    top_margin: 0.4in
+    top_margin: 0.2in
     bottom_margin: 0.2in
-    left_margin: 0.7in
-    right_margin: 0.7in
+    left_margin: 0.6in
+    right_margin: 0.6in
     show_footer: false
     show_top_note: true
 
@@ -181,9 +184,9 @@ design:
     photo_position: left
     photo_space_left: 0.4cm
     photo_space_right: 0.4cm
-    space_below_name: 0.7cm
-    space_below_headline: 0.7cm
-    space_below_connections: 0.7cm
+    space_below_name: 0.6cm
+    space_below_headline: 0.6cm
+    space_below_connections: 0.6cm
     connections:
       phone_number_format: national
       hyperlink: true
