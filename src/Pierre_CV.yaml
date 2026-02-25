@@ -14,74 +14,53 @@ cv:
   sections:
     expériences:
       - company: "[Matmut](https://www.matmut.fr/groupe-matmut/qui-sommes-nous.html)"
-        position: Stagiaire Développeur Web
+        position: Développeur Web
         start_date: 2026-01
         end_date: 2026-02
         location: Rouen
         summary: Stage de deuxième année de BTS SIO.
+        technologies: React, Tanstack Start, Docker, Playwright
         highlights:
           - Mise en place de l'environnement de tests e2e (régression visuelle, …) du design system.
           - Développement d'un interface de monitoring des fichiers bundle du design system.
 
-      - company: "[WorldSkills France](https://worldskills-france.org/editions/competition-nationale-des-metiers-2025-48e-edition)"
+      - company: "[WorldSkills France](https://worldskills-france.org)"
         position: Compétiteur
-        date: 2025-10
-        location: Marseille
-        summary: Obtention de la médaille d'argent à la finale nationale.
+        start_date: 2024-11
+        end_date: 2025-10
+        location: Caen & Marseille
+        summary: Champion régional et vice-champion de France en développement web.
         highlights:
-          - Vice-Champion de France en développement web (-22 ans), récompensé pour l'excellence technique et la créativité sous pression.
-          - Représentation de la région Normandie dans un environnement exigeant, face aux meilleurs talents nationaux.
-
-      - company: "[laine & maille](https://laine-maille.fr)"
-        position: Développeur Full Stack
-        start_date: 2025-01
-        end_date: 2025-09
-        location: À distance
-        summary: Développement et maintenance du site e-commerce.
-
-      - company: "[Overspeed](https://overspeed.fr)"
-        position: Développeur Full Stack
-        date: 2025-08
-        location: Rouen
-        summary: Rappelé pour continuer le travail démarré lors de mon stage.
-        highlights:
-          - Finalisation du micro-CMS de l'entreprise.
-          - Préparation au déploiement en production.
-
-      - company: "[FOLDING-ART](https://folding-art.fr)"
-        position: Développeur Full Stack
-        start_date: 2024-07
-        end_date: 2025-08
-        location: À distance
-        summary: Développement et maintenance du site e-commerce.
-
-      - company: "[Overspeed](https://overspeed.fr)"
-        position: Stagiaire Développeur Full Stack
-        start_date: 2025-05
-        end_date: 2025-06
-        location: Rouen
-        summary: Stage de première année de BTS SIO.
-        highlights:
-          - Développement d'un micro-CMS avec Next.js pour gérer le contenu des appareils de la gamme l'Aura des Villes.
-
-      - company: "[WorldSkills Normandie](https://parcours-metier.normandie.fr/orientation/agence/la-48e-competition-worldskills-2024-2026)"
-        position: Compétiteur
-        date: 2024-11
-        location: Caen
-        summary: Obtention de la médaille d'or aux sélections régionales normandes.
-        highlights:
-          - Champion régional en développement web, sélectionné pour représenter la Normandie à la finale nationale.
+          - Récompensé pour l'excellence technique face aux meilleurs talents nationaux.
           - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
 
+      - company: "[FOLDING-ART](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
+        position: Développeur Full Stack
+        start_date: 2024-07
+        end_date: 2025-07
+        location: À distance
+        summary: Développement, déploiement et maintenance de sites e-commerce en tant que prestataire.
+        technologies: React, Next.js, TailwindCSS
+
+      - company: "[Overspeed](https://overspeed.fr)"
+        position: Développeur Full Stack
+        start_date: 2025-05
+        end_date: 2025-08
+        location: Rouen
+        summary: Stage de première année de BTS SIO puis repris en tant que prestataire.
+        technologies: React, Next.js, TailwindCSS, Docker, Golang
+        highlights:
+          - Développement d'un CMS pour que les clients puissent gérer le contenu de leurs bornes.
+
     compétences:
-      - label: Langages
-        details: JavaScript, TypeScript, PHP, Python, C#, Go, HTML/CSS, SQL/T-SQL
+      - label: Langages de programmation
+        details: JavaScript, TypeScript, PHP, Python, C#, Golang, HTML/CSS, SQL/T-SQL
 
-      - label: Frameworks
-        details: React, React Native, Node, Bun, Laravel, Pytorch, Tauri, .NET
+      - label: Frameworks & bibliothèques
+        details: React, React Native, Node.js, Bun, Laravel, PyTorch, Tauri, .NET
 
-      - label: Outils de développement
-        details: Git, Docker, Kubernetes, Jenkins, Linux (utilisation quotidienne de Arch Linux)
+      - label: DevOps & outils
+        details: Git, Docker, Kubernetes, CI/CD (Jenkins, GitHub, GitLab), Linux (utilisation quotidienne de Fedora)
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
@@ -126,16 +105,26 @@ cv:
           - Lauréat des Olympiades de Sciences de l'Ingénieur 2024 (Normandie).
           - Développement d'une plateforme de révision pour les élèves de la spécialité S.I.
 
+    langues:
+      - label: Anglais
+        details: B2
+
+      - label: Allemand
+        details: A2
+
+      - label: Français
+        details: Natif
+
 design:
   theme: engineeringresumes
 
   page:
     size: us-letter
-    top_margin: 0.2in
-    bottom_margin: 0.2in
-    left_margin: 0.6in
-    right_margin: 0.6in
-    show_footer: false
+    top_margin: 0.4in
+    bottom_margin: 0.4in
+    left_margin: 0.4in
+    right_margin: 0.4in
+    show_footer: true
     show_top_note: true
 
   colors:
@@ -203,18 +192,18 @@ design:
 
   sections:
     allow_page_break: true
-    space_between_regular_entries: 0.25cm
-    space_between_text_based_entries: 0.15cm
+    space_between_regular_entries: 0.3cm
+    space_between_text_based_entries: 0.2cm
     show_time_spans_in: []
 
   entries:
-    date_and_location_width: 4.15cm
+    date_and_location_width: 4cm
     side_space: 0cm
     space_between_columns: 0.1cm
     allow_page_break: false
     short_second_row: false
     summary:
-      space_above: 0.08cm
+      space_above: 0.1cm
       space_left: 0cm
     highlights:
       bullet: •
@@ -228,7 +217,7 @@ design:
     footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
     top_note: "*LAST_UPDATED CURRENT_DATE*"
     single_date: MONTH_ABBREVIATION YEAR
-    date_range: START_DATE – END_DATE
+    date_range: START_DATE -- END_DATE
     time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     one_line_entry:
       main_column: "**LABEL:** DETAILS"
@@ -249,14 +238,8 @@ design:
       main_column: |-
         **POSITION**, COMPANY -- LOCATION
         SUMMARY
+        TECHNOLOGIES
         HIGHLIGHTS
-      date_and_location_column: DATE
-    publication_entry:
-      main_column: |-
-        **TITLE**
-        SUMMARY
-        AUTHORS
-        URL (JOURNAL)
       date_and_location_column: DATE
 
 locale:
