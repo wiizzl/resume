@@ -1,8 +1,8 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
   email: contact@houlliere.com
-  phone: +33-6-11-77-62-00
+  phone: +33-06-11-77-62-00
   website: https://houlliere.com
 
   social_networks:
@@ -19,7 +19,7 @@ cv:
         end_date: 2026-02
         location: Rouen
         summary: Stage de deuxième année de BTS SIO.
-        technologies: React, Tanstack Start, Docker, Playwright
+        technologies: React (Tanstack Start), Docker, Playwright
         highlights:
           - Mise en place de l'environnement de tests e2e (régression visuelle, …) du design system.
           - Développement d'un interface de monitoring des fichiers bundle du design system.
@@ -28,7 +28,7 @@ cv:
         position: Compétiteur
         start_date: 2024-11
         end_date: 2025-10
-        location: Caen & Marseille
+        location: Caen / Marseille
         summary: Champion régional et vice-champion de France en développement web.
         highlights:
           - Récompensé pour l'excellence technique face aux meilleurs talents nationaux.
@@ -40,7 +40,7 @@ cv:
         end_date: 2025-07
         location: À distance
         summary: Développement, déploiement et maintenance de sites e-commerce en tant que prestataire.
-        technologies: React, Next.js, TailwindCSS
+        technologies: React (Next.js), TailwindCSS
 
       - company: "[Overspeed](https://overspeed.fr)"
         position: Développeur Full Stack
@@ -48,75 +48,72 @@ cv:
         end_date: 2025-08
         location: Rouen
         summary: Stage de première année de BTS SIO puis repris en tant que prestataire.
-        technologies: React, Next.js, TailwindCSS, Docker, Golang
+        technologies: React (Next.js), Golang (Gin), Docker
         highlights:
           - Développement d'un CMS pour que les clients puissent gérer le contenu de leurs bornes.
 
     compétences:
-      - label: Langages de programmation
-        details: JavaScript, TypeScript, PHP, Python, C#, Golang, HTML/CSS, SQL/T-SQL
+      - label: Langages
+        details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, Java, Bash, SQL/T-SQL, HTML/CSS
 
-      - label: Frameworks & bibliothèques
-        details: React, React Native, Node.js, Bun, Laravel, PyTorch, Tauri, .NET
+      - label: Technologies Web
+        details: React, Next.js, TailwindCSS, Node.js, Bun, React Native, Tauri, nginx
 
-      - label: DevOps & outils
-        details: Git, Docker, Kubernetes, CI/CD (Jenkins, GitHub, GitLab), Linux (utilisation quotidienne de Fedora)
+      - label: Systèmes & DevOps
+        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI, Jenkins), Docker, Kubernetes, GitOps
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
 
+      - label: Modélisation & conception
+        details: UML, Merise, Scrum, Clean Code, Design Patterns
+
     projets:
-      - name: "[secure_chat](https://secure-chat-black.vercel.app)"
+      - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
         date: 2025-12
-        summary: Canal de discussion sécurisée et temporaire en temps réel.
+        summary: Canaux de discussions privés et temporaires en temps réel.
         technologies: React, Next.js, Redis, Elysia, Bun
 
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
         date: 2025-07
-        summary: Génération de ce CV de manière dynamique avec une pipeline CI/CD.
-        technologies: Python, RenderCV, GitHub CI/CD
+        summary: Génération de ce CV de manière dynamique via pipelines CI/CD.
+        technologies: Python, GitHub Actions
 
-      - name: "[B-Pump](https://play.google.com/store/apps/details?id=com.wiizz.bpumpapp)"
+      - name: "[B-Pump](https://github.com/B-Pump/bpump-app)"
         start_date: 2024-01
         end_date: 2024-05
-        summary: Application mobile permettant de contrôler un robot sportif analysant les mouvements avec un modèle d'IA.
-        technologies: React Native, Expo, Socket.IO
+        summary: Application mobile de contrôle d'un robot analysant les mouvements avec un modèle d'IA.
+        technologies: React Native, Expo, Socket.IO, Mediapipe
 
     formations:
-      - institution: Campus La Châtaigneraie
+      - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org)"
         area: SLAM
         degree: BTS SIO
         start_date: 2024-09
         end_date: 2026-07
         location: Le Mesnil-Esnard
-        highlights:
-          - Option mathématiques approdondis.
-          - Création de travaux pratiques pour le cours de Développement de services informatiques.
-          - Développement de l'application de vote du concours d'éloquence du campus.
+        summary: "*Option maths. approdondis, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatique.*"
 
-      - institution: Lycée Galilée
+      - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
         area: Maths. et Sciences de l'Ingénieur
-        degree: Bac général
+        degree: Baccalauréat général
         start_date: 2021-09
         end_date: 2024-07
         location: Franqueville-St-Pierre
+        summary: "*Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024*"
+
+    bénévolat:
+      - company: "[WorldSkills France](https://worldskills-france.org)"
+        position: Expert national adjoint
+        start_date: 2026-03
+        end_date: present
+        summary: Engagé pour la compétition WorldSkills France dans le métier Web Technologies.
         highlights:
-          - Obtention de la mention Bien.
-          - Lauréat des Olympiades de Sciences de l'Ingénieur 2024 (Normandie).
-          - Développement d'une plateforme de révision pour les élèves de la spécialité S.I.
-
-    langues:
-      - label: Anglais
-        details: B2
-
-      - label: Allemand
-        details: A2
-
-      - label: Français
-        details: Natif
+          - Contribution à la réalisation des sujets des sélections et de la finale nationale.
+          - Aide à l'organisation logistique et à la correction des épreuves.
 
 design:
-  theme: engineeringresumes
+  theme: opal
 
   page:
     size: us-letter
@@ -124,38 +121,38 @@ design:
     bottom_margin: 0.4in
     left_margin: 0.4in
     right_margin: 0.4in
-    show_footer: true
+    show_footer: false
     show_top_note: true
 
   colors:
     body: rgb(0, 0, 0)
-    name: rgb(0, 0, 0)
-    headline: rgb(0, 0, 0)
-    connections: rgb(0, 0, 0)
-    section_titles: rgb(0, 0, 0)
-    links: rgb(0, 0, 0)
-    footer: rgb(128, 128, 128)
-    top_note: rgb(128, 128, 128)
+    name: rgb(0, 100, 90)
+    headline: rgb(0, 80, 72)
+    connections: rgb(0, 80, 72)
+    section_titles: rgb(0, 100, 90)
+    links: rgb(0, 100, 90)
+    footer: rgb(100, 140, 135)
+    top_note: rgb(100, 140, 135)
 
   typography:
-    line_spacing: 0.4em
-    alignment: justified
+    line_spacing: 0.6em
+    alignment: left
     date_and_location_column_alignment: right
     font_family:
-      body: XCharter
-      name: XCharter
-      headline: XCharter
-      connections: XCharter
-      section_titles: XCharter
+      body: Lato
+      name: Lato
+      headline: Lato
+      connections: Lato
+      section_titles: Lato
     font_size:
-      body: 10pt
-      name: 25pt
+      body: 9.5pt
+      name: 24pt
       headline: 10pt
       connections: 10pt
-      section_titles: 1.2em
+      section_titles: 11pt
     small_caps:
       name: false
-      headline: false
+      headline: true
       connections: false
       section_titles: true
     bold:
@@ -163,82 +160,84 @@ design:
       headline: false
       connections: false
       section_titles: true
+
   links:
     underline: false
     show_external_link_icon: true
 
   header:
-    alignment: center
+    alignment: left
     photo_width: 3.5cm
     photo_position: left
     photo_space_left: 0.4cm
     photo_space_right: 0.4cm
-    space_below_name: 0.6cm
-    space_below_headline: 0.6cm
-    space_below_connections: 0.6cm
+    space_below_name: 0.4cm
+    space_below_headline: 0.4cm
+    space_below_connections: 0.5cm
     connections:
       phone_number_format: national
       hyperlink: true
       show_icons: true
       display_urls_instead_of_usernames: false
-      separator: "|"
-      space_between_connections: 0.5cm
+      separator: •
+      space_between_connections: 0.6cm
 
   section_titles:
     type: with_partial_line
     line_thickness: 0.5pt
-    space_above: 0.6cm
-    space_below: 0.3cm
+    space_above: 0.65cm
+    space_below: 0.35cm
 
   sections:
     allow_page_break: true
-    space_between_regular_entries: 0.3cm
-    space_between_text_based_entries: 0.2cm
-    show_time_spans_in: []
+    space_between_regular_entries: 0.8em
+    space_between_text_based_entries: 0.3em
+    show_time_spans_in: ["expériences"]
 
   entries:
-    date_and_location_width: 4cm
-    side_space: 0cm
+    date_and_location_width: 4.15cm
+    side_space: 0.1cm
     space_between_columns: 0.1cm
     allow_page_break: false
-    short_second_row: false
+    short_second_row: true
+    degree_width: 1cm
     summary:
-      space_above: 0.1cm
+      space_above: 0.04cm
       space_left: 0cm
     highlights:
-      bullet: •
-      nested_bullet: •
-      space_left: 0cm
-      space_above: 0.08cm
-      space_between_items: 0.08cm
-      space_between_bullet_and_text: 0.3em
+      bullet: ◦
+      nested_bullet: ◦
+      space_left: 0.15cm
+      space_above: 0.04cm
+      space_between_items: 0.04cm
+      space_between_bullet_and_text: 0.5em
 
   templates:
     footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
-    top_note: "*LAST_UPDATED CURRENT_DATE*"
-    single_date: MONTH_ABBREVIATION YEAR
-    date_range: START_DATE -- END_DATE
+    top_note: "*LAST_UPDATED MONTH_NAME YEAR*"
+    single_date: MONTH_ABBREVIATION YEAR_IN_TWO_DIGITS
+    date_range: START_DATE – END_DATE
     time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     one_line_entry:
-      main_column: "**LABEL:** DETAILS"
+      main_column: "LABEL: *DETAILS*"
     education_entry:
       main_column: |-
-        **INSTITUTION**, DEGREE (AREA) -- LOCATION
+        INSTITUTION -- *DEGREE_WITH_AREA* -- LOCATION
         SUMMARY
         HIGHLIGHTS
       degree_column:
       date_and_location_column: DATE
     normal_entry:
       main_column: |-
-        **NAME** -- TECHNOLOGIES
+        NAME -- *TECHNOLOGIES*
         SUMMARY
         HIGHLIGHTS
       date_and_location_column: DATE
     experience_entry:
       main_column: |-
-        **POSITION**, COMPANY -- LOCATION
+        COMPANY -- *POSITION* -- LOCATION
+        *TECHNOLOGIES*
         SUMMARY
-        TECHNOLOGIES
         HIGHLIGHTS
       date_and_location_column: DATE
 
@@ -247,22 +246,24 @@ locale:
   last_updated: Mis à jour en
   month: mois
   months: mois
-  year: année
-  years: années
+  year: an
+  years: ans
   present: Présent
+  phrases:
+    degree_with_area: DEGREE (AREA)
   month_abbreviations:
-    - Janv.
-    - Févr.
-    - Mars
-    - Avr.
+    - Jan
+    - Fév
+    - Mar
+    - Avr
     - Mai
     - Juin
-    - Juil.
+    - Juil
     - Août
-    - Sept.
-    - Oct.
-    - Nov.
-    - Déc.
+    - Sep
+    - Oct
+    - Nov
+    - Déc
   month_names:
     - Janvier
     - Février
@@ -278,14 +279,20 @@ locale:
     - Décembre
 
 settings:
+  current_date: today
   render_command:
+    output_folder: rendercv_output
     design:
     locale:
-    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
-    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    typst_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.md
+    html_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.html
+    png_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.png
     dont_generate_markdown: true
     dont_generate_html: true
     dont_generate_typst: false
     dont_generate_pdf: false
     dont_generate_png: true
   bold_keywords: []
+  pdf_title: CV - NAME
