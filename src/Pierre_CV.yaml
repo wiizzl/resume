@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
+  headline: Développeur logiciel orienté Web — culture DevOps, CI/CD & tests
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
   website: https://houlliere.com
@@ -21,8 +22,8 @@ cv:
         summary: Stage de deuxième année de BTS SIO.
         technologies: React (Tanstack Start), Docker, Playwright
         highlights:
-          - Mise en place de l'environnement de tests e2e (régression visuelle, …) du design system.
-          - Développement d'un interface de monitoring des fichiers bundle du design system.
+          - Mise en place de l'environnement de tests E2E (régression visuelle, …) du design system.
+          - Développement d'une interface de monitoring des assets du design system.
 
       - company: "[WorldSkills France](https://worldskills-france.org)"
         position: Compétiteur
@@ -35,7 +36,7 @@ cv:
           - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
 
       - company: "[FOLDING-ART](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
-        position: Développeur Full Stack
+        position: Développeur Full-stack
         start_date: 2024-07
         end_date: 2025-07
         location: À distance
@@ -43,7 +44,7 @@ cv:
         technologies: React (Next.js), TailwindCSS
 
       - company: "[Overspeed](https://overspeed.fr)"
-        position: Développeur Full Stack
+        position: Développeur Full-stack
         start_date: 2025-05
         end_date: 2025-08
         location: Rouen
@@ -92,7 +93,7 @@ cv:
         start_date: 2024-09
         end_date: 2026-07
         location: Le Mesnil-Esnard
-        summary: "*Option maths. approdondis, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatique.*"
+        summary: "*Option maths. approdondies, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatiques.*"
 
       - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
         degree: Baccalauréat général
@@ -146,15 +147,15 @@ design:
       section_titles: Lato
     font_size:
       body: 10pt
-      name: 22pt
+      name: 20pt
       headline: 10pt
       connections: 10pt
-      section_titles: 11pt
+      section_titles: 11.5pt
     small_caps:
       name: false
-      headline: true
+      headline: false
       connections: false
-      section_titles: true
+      section_titles: false
     bold:
       name: false
       headline: false
@@ -171,7 +172,7 @@ design:
     photo_position: left
     photo_space_left: 0.4cm
     photo_space_right: 0.4cm
-    space_below_name: 0.4cm
+    space_below_name: 0.25cm
     space_below_headline: 0.4cm
     space_below_connections: 0.5cm
     connections:
@@ -185,7 +186,7 @@ design:
   section_titles:
     type: with_partial_line
     line_thickness: 0.5pt
-    space_above: 0.65cm
+    space_above: 0.6cm
     space_below: 0.35cm
 
   sections:
