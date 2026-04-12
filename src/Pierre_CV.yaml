@@ -58,10 +58,10 @@ cv:
         details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, Java, Bash, SQL/T-SQL, HTML/CSS
 
       - label: Technologies Web
-        details: React, Next.js, TailwindCSS, Node.js, Bun, React Native, Tauri, nginx
+        details: React, Next.js, Écosystème Tanstack, TailwindCSS, Node.js, Bun, React Native, Tauri, nginx
 
       - label: Systèmes & DevOps
-        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI, Jenkins), Docker, Kubernetes, GitOps
+        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD, Jenkins), Docker, Kubernetes, GitOps
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
@@ -73,7 +73,7 @@ cv:
       - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
         date: 2025-12
         summary: Canaux de discussions privés et temporaires en temps réel.
-        technologies: React, Next.js, Redis, Elysia, Bun
+        technologies: React (Next.js), Redis, Elysia, Bun
 
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
         date: 2025-07
