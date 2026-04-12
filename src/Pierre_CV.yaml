@@ -87,20 +87,20 @@ cv:
 
     formations:
       - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org)"
-        area: SLAM
         degree: BTS SIO
+        area: SLAM
         start_date: 2024-09
         end_date: 2026-07
         location: Le Mesnil-Esnard
         summary: "*Option maths. approdondis, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatique.*"
 
       - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
-        area: Maths. et Sciences de l'Ingénieur
         degree: Baccalauréat général
+        area: Maths. et Sciences de l'Ingénieur
         start_date: 2021-09
         end_date: 2024-07
         location: Franqueville-St-Pierre
-        summary: "*Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024*"
+        summary: "*Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024, Développement d'une plateforme de révisions pour les élèves de la spécialité S.I.*"
 
     bénévolat:
       - company: "[WorldSkills France](https://worldskills-france.org)"
@@ -116,7 +116,7 @@ design:
   theme: opal
 
   page:
-    size: us-letter
+    size: a4
     top_margin: 0.4in
     bottom_margin: 0.4in
     left_margin: 0.4in
@@ -145,8 +145,8 @@ design:
       connections: Lato
       section_titles: Lato
     font_size:
-      body: 9.5pt
-      name: 24pt
+      body: 10pt
+      name: 22pt
       headline: 10pt
       connections: 10pt
       section_titles: 11pt
