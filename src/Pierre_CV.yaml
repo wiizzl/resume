@@ -88,7 +88,7 @@ cv:
     formations:
       - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org)"
         degree: BTS SIO
-        area: SLAM
+        area: Solutions Logicielles et Applications Métiers
         start_date: 2024-09
         end_date: 2026-07
         location: Le Mesnil-Esnard
@@ -219,14 +219,16 @@ design:
     date_range: START_DATE – END_DATE
     time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     one_line_entry:
-      main_column: "LABEL: *DETAILS*"
+      main_column: "LABEL : *DETAILS*"
     education_entry:
       main_column: |-
-        INSTITUTION -- *DEGREE_WITH_AREA* -- LOCATION
+        INSTITUTION -- DEGREE_WITH_AREA
         SUMMARY
         HIGHLIGHTS
       degree_column:
-      date_and_location_column: DATE
+      date_and_location_column: |-
+        LOCATION
+        DATE
     normal_entry:
       main_column: |-
         NAME -- *TECHNOLOGIES*
@@ -235,11 +237,13 @@ design:
       date_and_location_column: DATE
     experience_entry:
       main_column: |-
-        COMPANY -- *POSITION* -- LOCATION
+        COMPANY -- POSITION
         *TECHNOLOGIES*
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column: DATE
+      date_and_location_column: |-
+        LOCATION
+        DATE
 
 locale:
   language: french
