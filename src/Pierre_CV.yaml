@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: En recherche d'alternance pour la rentrée 2026 — Développement logiciel / culture DevOps
+  headline: En recherche d'alternance pour la rentrée 2026 — Développement logiciel / DevOps
   location: Rouen
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
