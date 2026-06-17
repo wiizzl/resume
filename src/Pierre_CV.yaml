@@ -1,7 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: Développeur logiciel orienté Web — culture DevOps, CI/CD & tests
+  headline: En recherche d'alternance pour la rentrée 2026 — Développement logiciel / culture DevOps
+  location: Rouen
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
   website: https://houlliere.com
@@ -14,26 +15,25 @@ cv:
 
   sections:
     expériences:
+      - company: "[WorldSkills France](https://worldskills-france.org)"
+        position: Compétiteur & Expert national adjoint
+        start_date: 2024-11
+        summary: De la compétition en développement web à l'encadrement des prochaines éditions.
+        highlights:
+          - Champion régional Normandie (Caen 2024).
+          - Vice-champion de France (Marseille 2025).
+          - Expert national adjoint (bénévole) depuis 2026 pour l'édition Orléans 2027.
+
       - company: "[Matmut](https://www.matmut.fr/groupe-matmut/qui-sommes-nous.html)"
         position: Développeur Web
         start_date: 2026-01
         end_date: 2026-02
         location: Rouen
         summary: Stage de deuxième année de BTS SIO.
-        technologies: React (Tanstack Start), Docker, Playwright
+        technologies: React (Tanstack Start), Playwright, Azure DevOps
         highlights:
           - Mise en place de l'environnement de tests E2E (régression visuelle, …) du design system.
-          - Développement d'une interface de monitoring des assets du design system.
-
-      - company: "[WorldSkills France](https://worldskills-france.org)"
-        position: Compétiteur
-        start_date: 2024-11
-        end_date: 2025-10
-        location: Caen / Marseille
-        summary: Champion régional et vice-champion de France en développement web.
-        highlights:
-          - Récompensé pour l'excellence technique face aux meilleurs talents nationaux.
-          - Préparation intensive (technique, physique et mentale) encadrée par des coachs, pour performer au plus haut niveau.
+          - Développement d'un système de statistiques des performances du design system.
 
       - company: "[FOLDING-ART](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
         position: Développeur Full-stack
@@ -55,19 +55,19 @@ cv:
 
     compétences:
       - label: Langages
-        details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, Java, Bash, SQL/T-SQL, HTML/CSS
+        details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, SQL, HTML/CSS
 
       - label: Technologies Web
-        details: React, Next.js, Écosystème Tanstack, TailwindCSS, Node.js, Bun, React Native, Tauri, nginx
+        details: React, Next.js, Écosystème Tanstack, Angular, TailwindCSS, Node.js, Bun, React Native, Tauri
 
       - label: Systèmes & DevOps
-        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD, Jenkins), Docker, Kubernetes, GitOps
+        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD), Docker, GitOps (ArgoCD)
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
 
       - label: Modélisation & conception
-        details: UML, Merise, Scrum, Clean Code, Design Patterns
+        details: UML, Merise, Agile Scrum, Clean Code, Design Patterns
 
     projets:
       - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
@@ -90,28 +90,26 @@ cv:
       - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org)"
         degree: BTS SIO
         area: Solutions Logicielles et Applications Métiers
-        start_date: 2024-09
-        end_date: 2026-07
+        start_date: 2024
+        end_date: 2026
         location: Le Mesnil-Esnard
-        summary: "*Option maths. approdondies, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatiques.*"
+        summary: Option maths. approfondies, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatiques.
 
       - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
         degree: Baccalauréat général
         area: Maths. et Sciences de l'Ingénieur
-        start_date: 2021-09
-        end_date: 2024-07
+        start_date: 2021
+        end_date: 2024
         location: Franqueville-St-Pierre
-        summary: "*Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024, Développement d'une plateforme de révisions pour les élèves de la spécialité S.I.*"
+        summary: Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024, Développement d'une plateforme de révisions pour les élèves de la spécialité S.I.
 
-    bénévolat:
-      - company: "[WorldSkills France](https://worldskills-france.org)"
-        position: Expert national adjoint
-        start_date: 2026-03
-        end_date: present
-        summary: Engagé pour la compétition WorldSkills France dans le métier Web Technologies.
-        highlights:
-          - Contribution à la réalisation des sujets des sélections et de la finale nationale.
-          - Aide à l'organisation logistique et à la correction des épreuves.
+    langues:
+      - label: Français
+        details: Natif
+      - label: Anglais
+        details: B2+
+      - label: Allemand
+        details: A2
 
 design:
   theme: opal
@@ -224,7 +222,7 @@ design:
     education_entry:
       main_column: |-
         INSTITUTION -- DEGREE_WITH_AREA
-        SUMMARY
+        *SUMMARY*
         HIGHLIGHTS
       degree_column:
       date_and_location_column: |-
