@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: En recherche d'alternance pour la rentrée 2026 — Développement logiciel / DevOps
+  headline: Recherche d'alternance pour la rentrée 2026 — Développement logiciel / DevOps
   location: Rouen
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
@@ -15,15 +15,6 @@ cv:
 
   sections:
     expériences:
-      - company: "[WorldSkills France](https://worldskills-france.org)"
-        position: Compétiteur & Expert national adjoint
-        start_date: 2024-11
-        summary: De la compétition en développement web à l'encadrement des prochaines éditions.
-        highlights:
-          - Champion régional Normandie (Caen 2024).
-          - Vice-champion de France (Marseille 2025).
-          - Expert national adjoint (bénévole) depuis 2026 pour l'édition Orléans 2027.
-
       - company: "[Matmut](https://www.matmut.fr/groupe-matmut/qui-sommes-nous.html)"
         position: Développeur Web
         start_date: 2026-01
@@ -35,8 +26,8 @@ cv:
           - Mise en place de l'environnement de tests E2E (régression visuelle, …) du design system.
           - Développement d'un système de statistiques des performances du design system.
 
-      - company: "[FOLDING-ART](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
-        position: Développeur Full-stack
+      - company: "[Folding Art](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
+        position: Développeur Full-stack (freelance)
         start_date: 2024-07
         end_date: 2025-07
         location: À distance
@@ -53,6 +44,15 @@ cv:
         highlights:
           - Développement d'un CMS pour que les clients puissent gérer le contenu de leurs bornes.
 
+      - company: "[WorldSkills France](https://worldskills-france.org)"
+        position: Compétiteur & Expert national adjoint
+        start_date: 2024-11
+        summary: De la compétition en développement web à l'encadrement des prochaines éditions.
+        highlights:
+          - Champion régional Normandie (Caen 2024).
+          - Vice-champion de France (Marseille 2025).
+          - Expert national adjoint (bénévole) depuis 2026 pour l'édition Orléans 2027.
+
     compétences:
       - label: Langages
         details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, SQL, HTML/CSS
@@ -66,8 +66,11 @@ cv:
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
 
-      - label: Modélisation & conception
+      - label: Modélisation & Conception
         details: UML, Merise, Agile Scrum, Clean Code, Design Patterns
+
+      - label: Soft Skills
+        details: Communication, travail en équipe, résolution de problèmes, adaptabilité
 
     projets:
       - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
@@ -93,7 +96,7 @@ cv:
         start_date: 2024
         end_date: 2026
         location: Le Mesnil-Esnard
-        summary: Option maths. approfondies, Développement de l'application de vote du concours d'éloquence du campus, Création de TP pour le cours de Développement de services informatiques.
+        summary: Option mathématiques approfondies.
 
       - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
         degree: Baccalauréat général
@@ -101,23 +104,27 @@ cv:
         start_date: 2021
         end_date: 2024
         location: Franqueville-St-Pierre
-        summary: Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024, Développement d'une plateforme de révisions pour les élèves de la spécialité S.I.
+        summary: Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024.
 
     langues:
-      - label: Français
-        details: Natif
       - label: Anglais
         details: B2+
       - label: Allemand
         details: A2
+
+    loisirs:
+      - label: Sport
+        details: Musculation, Volleyball
+      - label: Informatique
+        details: Programmation, Gestion de mon homelab via K3S
 
 design:
   theme: opal
 
   page:
     size: a4
-    top_margin: 0.4in
-    bottom_margin: 0.4in
+    top_margin: 0.3in
+    bottom_margin: 0.2in
     left_margin: 0.4in
     right_margin: 0.4in
     show_footer: false
@@ -146,7 +153,7 @@ design:
     font_size:
       body: 10pt
       name: 20pt
-      headline: 10pt
+      headline: 12pt
       connections: 10pt
       section_titles: 11.5pt
     small_caps:
@@ -156,7 +163,7 @@ design:
       section_titles: false
     bold:
       name: false
-      headline: false
+      headline: true
       connections: false
       section_titles: true
 
