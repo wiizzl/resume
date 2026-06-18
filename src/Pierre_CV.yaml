@@ -42,7 +42,7 @@ cv:
         start_date: 2025-05
         end_date: 2025-08
         location: Rouen
-        summary: Stage de deuxième année de BTS puis repris en tant que prestataire.
+        summary: Stage de première année de BTS puis repris en tant que prestataire.
         technologies: React (Next.js), Golang (Gin), Docker
         highlights:
           - Conception d'un CMS multi-client utilisé par 50+ clients.
