@@ -2,7 +2,8 @@ name: Release CV
 
 on:
   push:
-    branches: [deploy]
+    branches:
+      - deploy
 
 permissions:
   contents: write
@@ -36,9 +37,6 @@ jobs:
           git tag -f latest
           git push -f origin latest
 
-          gh release create latest src/rendercv_output/* \
-            --title "CV — $(date +'%Y-%m-%d')" \
-            --generate-notes \
-            --latest
+          gh release create latest src/rendercv_output/* --title "$(date +'%Y-%m-%d')" --latest
         env:
           GH_TOKEN: ${{ github.token }}
