@@ -37,6 +37,6 @@ jobs:
           git tag -f latest
           git push -f origin latest
 
-          gh release create latest src/rendercv_output/* --title "$(date +'%Y-%m-%d')" --latest
+          gh release create latest src/rendercv_output/* --title "$(date +'%Y-%m-%d')" --generate-notes --latest
         env:
           GH_TOKEN: ${{ github.token }}
