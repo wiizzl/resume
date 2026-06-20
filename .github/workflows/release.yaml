@@ -1,35 +1,45 @@
-name: Create Release
+name: Release CV
 
 on:
   push:
-    tags:
-      - "*"
+    branches: [deploy]
 
 permissions:
   contents: write
 
 jobs:
-  call_build_workflow:
-    name: RenderCV
+  build:
+    name: Build
     uses: ./.github/workflows/build.yaml
 
   release:
     needs: call_build_workflow
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
-      - name: Download RenderCV Output
+      - name: Download build output
         uses: actions/download-artifact@v5
         with:
           name: rendercv_output
           path: src/rendercv_output
 
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: src/rendercv_output/*
-          generate_release_notes: true
-          make_latest: true
+      - name: Publish release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          gh release delete latest -y --cleanup-tag 2>/dev/null || true
+
+          git tag -f latest
+          git push -f origin latest
+
+          gh release create latest src/rendercv_output/* \
+            --title "CV — $(date +'%Y-%m-%d')" \
+            --generate-notes \
+            --latest
+        env:
+          GH_TOKEN: ${{ github.token }}
