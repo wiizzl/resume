@@ -13,7 +13,7 @@ jobs:
     uses: ./.github/workflows/build.yaml
 
   release:
-    needs: call_build_workflow
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
