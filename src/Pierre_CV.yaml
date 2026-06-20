@@ -24,7 +24,7 @@ cv:
         technologies: React (Tanstack Start), Playwright, Azure DevOps
         highlights:
           - Mise en place des tests de régression visuelle pour le design system (100+ composants).
-          - Tableau de bord de performance (poids, temps de chargement) des assets du design system, utilisé quotidennement par l'équipe UX.
+          - Tableau de bord de performance (poids, temps de chargement) des assets du design system, utilisé quotidiennement par l'équipe UX.
 
       - company: "[Folding Art](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
         position: Développeur Full-stack (freelance)
@@ -45,13 +45,13 @@ cv:
         summary: Stage de première année de BTS puis repris en tant que prestataire.
         technologies: React (Next.js), Golang (Gin), Docker
         highlights:
-          - Conception d'un CMS multi-client utilisé par 50+ clients.
+          - Conception d'un CMS multi-client utilisé par 20+ entreprises clientes.
           - Amélioration du SEO en passant d'une SPA à du SSR.
 
       - company: "[WorldSkills France](https://worldskills-france.org)"
         position: Compétiteur & Expert national adjoint
         start_date: 2024-11
-        summary: De la compétition en développement web à l'encadrement des prochaines éditions.
+        summary: Plus grande compétition des métiers au monde. J'agis désormais en tant que bénévole.
         highlights:
           - Champion régional Normandie (Caen 2024).
           - Vice-champion de France (Marseille 2025).
@@ -94,7 +94,15 @@ cv:
         technologies: React Native, Expo, Socket.IO, Mediapipe
 
     formations:
-      - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org)"
+      # - institution: "[CESI](https://cesi.fr/formation/ingenieur-e-informatique-cursus-en-3-ans-par-lapprentissage-2513617)"
+      #   degree: Ingénieur
+      #   area: Informatique
+      #   start_date: 2026
+      #   end_date: 2029
+      #   location: Rouen
+      #   summary: Formation en alternance.
+
+      - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org/bts-service-informatiques-organisations-solutions-logicielles-applications-metiers)"
         degree: BTS SIO
         area: Solutions Logicielles et Applications Métiers
         start_date: 2024
