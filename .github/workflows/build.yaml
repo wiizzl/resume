@@ -2,8 +2,7 @@ name: Build CV
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore: [deploy]
   workflow_call:
 
 permissions:
@@ -12,9 +11,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
@@ -22,16 +21,8 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked --all-extras --dev
 
-      - name: RenderCV
-        run: |
-          cd src
-          cv_file=$(find .  -maxdepth 1 -type f -name "*_CV.yaml" | head -n 1)
-          if [ -z "$cv_file" ]; then
-            echo "No RenderCV file found!"
-            exit 1
-          fi
-          cd ..
-          uv run rendercv render src/$cv_file
+      - name: Render the CV
+        run: uv run rendercv render src/Pierre_CV.yaml
 
       - name: Upload output as an artifact
         uses: actions/upload-artifact@v6
