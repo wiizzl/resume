@@ -33,4 +33,4 @@ uv sync
 rendercv render --watch src/Pierre_CV.yaml
 ```
 
-4. Create a release my merging `main` into `deploy`
+4. Create a release by merging `main` into `deploy`
