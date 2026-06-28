@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: Recherche d'alternance pour la rentrée 2026 — Développement logiciel / DevOps
+  headline: Alternance pour septembre 2026 — Développement logiciel — 1 an minimum
   location: Rouen
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
-  website: https://houlliere.com
+  photo: assets/me.jpg
 
   social_networks:
     - network: LinkedIn
@@ -51,11 +51,11 @@ cv:
       - company: "[WorldSkills France](https://worldskills-france.org)"
         position: Compétiteur & Expert national adjoint
         start_date: 2024-11
-        summary: Plus grande compétition des métiers au monde. J'agis désormais en tant que bénévole.
+        summary: Plus grande compétition des métiers au monde. Je suis impliqué dans la catégorie Développement Web.
         highlights:
           - Champion régional Normandie (Caen 2024).
           - Vice-champion de France (Marseille 2025).
-          - Expert national adjoint (bénévole) depuis 2026 pour l'édition Orléans 2027.
+          - Expert national adjoint (bénévole) depuis Mars 2026 pour l'édition Orléans 2027.
 
     compétences:
       - label: Langages
@@ -100,7 +100,7 @@ cv:
         start_date: 2026
         end_date: 2029
         location: Rouen
-        summary: Formation en alternance.
+        summary: Formation en alternance avec un rythme de 1 mois en école pour 1 mois en entreprise.
 
       - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org/bts-service-informatiques-organisations-solutions-logicielles-applications-metiers)"
         degree: BTS SIO
@@ -136,17 +136,17 @@ design:
     left_margin: 0.3in
     right_margin: 0.3in
     show_footer: false
-    show_top_note: true
+    show_top_note: false
 
   colors:
     body: rgb(0, 0, 0)
-    name: rgb(0, 100, 90)
-    headline: rgb(0, 80, 72)
-    connections: rgb(0, 80, 72)
-    section_titles: rgb(0, 100, 90)
-    links: rgb(0, 100, 90)
-    footer: rgb(100, 140, 135)
-    top_note: rgb(100, 140, 135)
+    name: rgb(135, 60, 20)
+    headline: rgb(105, 45, 15)
+    connections: rgb(105, 45, 15)
+    section_titles: rgb(135, 60, 20)
+    links: rgb(135, 60, 20)
+    footer: rgb(165, 110, 80)
+    top_note: rgb(165, 110, 80)
 
   typography:
     line_spacing: 0.5em
@@ -181,7 +181,7 @@ design:
 
   header:
     alignment: left
-    photo_width: 3cm
+    photo_width: 2cm
     photo_position: right
     photo_space_left: 0.4cm
     photo_space_right: 0cm
