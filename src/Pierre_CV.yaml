@@ -49,17 +49,17 @@ cv:
           - Amélioration du SEO en passant d'une SPA à du SSR.
 
       - company: "[WorldSkills France](https://worldskills-france.org)"
-        position: Compétiteur & Expert national adjoint
+        position: Compétiteur puis Expert national adjoint
         start_date: 2024-11
         summary: Plus grande compétition des métiers au monde. Je suis impliqué dans la catégorie Développement Web.
         highlights:
           - Champion régional Normandie (Caen 2024).
           - Vice-champion de France (Marseille 2025).
-          - Expert national adjoint (bénévole) depuis Mars 2026 pour l'édition Orléans 2027.
+          - Expert national adjoint (bénévole) depuis mars 2026 pour l'édition Orléans 2027.
 
     compétences:
       - label: Langages
-        details: TypeScript/JavaScript, Golang, C# (.NET), Python, PHP, SQL, HTML/CSS
+        details: TypeScript/JavaScript, Golang, C# (.NET), Java, Python, PHP, SQL, HTML/CSS
 
       - label: Technologies Web
         details: React, Next.js, Écosystème Tanstack, Angular, TailwindCSS, Node.js, Bun, React Native, Tauri
@@ -74,7 +74,7 @@ cv:
         details: UML, Merise, Agile Scrum, Clean Code, Design Patterns
 
       - label: Soft Skills
-        details: Communication, travail en équipe, résolution de problèmes, adaptabilité
+        details: Communication, Travail en équipe, Résolution de problèmes, Adaptabilité
 
     projets:
       - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
@@ -84,18 +84,18 @@ cv:
 
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
         date: 2025-07
-        summary: Génération automatisée de ce CV — mise à jour et déploiement en 1 commit via CI/CD.
+        summary: "Génération automatisée de ce CV : mise à jour et déploiement en 1 commit via CI/CD."
         technologies: Python, GitHub Actions
 
       - name: "[B-Pump](https://github.com/B-Pump/bpump-app)"
         start_date: 2024-01
         end_date: 2024-05
         summary: Application mobile de pilotage d'un robot d'analyse de mouvement par IA, projet d'équipe.
-        technologies: React Native, Expo, Socket.IO, Mediapipe
+        technologies: React Native (Expo), Socket.IO, Mediapipe
 
     formations:
       - institution: "[CESI](https://cesi.fr/formation/ingenieur-e-informatique-cursus-en-3-ans-par-lapprentissage-2513617)"
-        degree: Ingénieur
+        degree: Cycle Ingénieur
         area: Informatique
         start_date: 2026
         end_date: 2029
