@@ -95,7 +95,7 @@ cv:
 
     formations:
       - institution: "[CESI](https://cesi.fr/formation/ingenieur-e-informatique-cursus-en-3-ans-par-lapprentissage-2513617)"
-        degree: Cycle Ingénieur
+        degree: Diplôme d'Ingénieur
         area: Informatique
         start_date: 2026
         end_date: 2029
