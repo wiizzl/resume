@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: Alternance pour septembre 2026 — Développement logiciel — 1 an minimum
+  headline: Alternance pour septembre 2026 — Développeur Full Stack — 1 an minimum
   location: Rouen
   email: contact@houlliere.com
   phone: +33-06-11-77-62-00
@@ -12,6 +12,11 @@ cv:
       username: pierrehoulliere
     - network: GitHub
       username: wiizzl
+
+  custom_connections:
+    - fontawesome_icon: cake
+      placeholder: 20 ans
+      url:
 
   sections:
     expériences:
@@ -193,8 +198,8 @@ design:
       hyperlink: true
       show_icons: true
       display_urls_instead_of_usernames: false
-      separator: •
-      space_between_connections: 0.75cm
+      separator: ·
+      space_between_connections: 0.6cm
 
   section_titles:
     type: with_partial_line
