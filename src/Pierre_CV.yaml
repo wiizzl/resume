@@ -82,13 +82,13 @@ cv:
         details: Communication, Travail en équipe, Résolution de problèmes, Adaptabilité
 
     projets:
-      - name: "[secure_chat](https://github.com/wiizzl/secure-chat)"
-        date: 2025-12
-        summary: Application de messagerie chiffrée avec canaux privés éphémères en temps réel.
-        technologies: React (Next.js), Redis, Elysia, Bun
+      - name: "[Fulgur](https://wiizzl.github.io/fulgur)"
+        date: 2026-07
+        summary: Framework sur mesure créé pour faciliter le développement d'applications fullstack.
+        technologies: Bun, Vite, Elysia
 
       - name: "[CV dynamique](https://github.com/wiizzl/resume)"
-        date: 2025-07
+        date: 2025-09
         summary: "Génération automatisée de ce CV : mise à jour et déploiement en 1 commit via CI/CD."
         technologies: Python, GitHub Actions
 
