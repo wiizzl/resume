@@ -33,9 +33,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           gh release delete latest -y --cleanup-tag 2>/dev/null || true
-
-          git tag -f latest
-          git push -f origin latest
+          git tag -d latest 2>/dev/null || true
 
           gh release create latest src/rendercv_output/* --title "$(date +'%Y-%m-%d')" --generate-notes --latest
         env:
