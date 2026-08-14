@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: Alternance pour septembre 2026 — Développeur Full Stack — 1 an minimum
+  headline: Recherche d'Alternance -- Développeur Full Stack -- de 1 à 3 ans
   location: Rouen
   email: contact@houlliere.com
-  phone: +33-06-11-77-62-00
+  phone: +33-6-11-77-62-00
   photo: assets/me.jpg
 
   social_networks:
@@ -20,32 +20,33 @@ cv:
 
   sections:
     expériences:
-      - company: "[Matmut](https://www.matmut.fr/groupe-matmut/qui-sommes-nous.html)"
+      - company: "[Freelance](https://houlliere.com)"
+        position: Développeur Full-Stack
+        start_date: 2024-11
+        end_date: 2026-08
+        location: À distance
+        summary: Gestion de projets de bout en bout pour divers clients en tant qu'entrepreneur individuel.
+        technologies: React, TailwindCSS, Golang, Docker, Astro, AWS
+        highlights:
+          - "PF Rivière : Conception et développement d'un CMS pour site vitrine avec analytics poussés via AWS."
+          - "Folding Art / Laine & Maille : Développement et maintenance de 2 sites e-commerce comptant 250+ utilisateurs. Déploiement automatisé via CI/CD."
+          - "Overspeed : Finalisation et déploiement du projet réalisé en stage de BTS."
+
+      - company: "[Matmut](https://matmut.fr/groupe-matmut/qui-sommes-nous.html)"
         position: Développeur Web
         start_date: 2026-01
         end_date: 2026-02
         location: Rouen
         summary: Stage de deuxième année de BTS.
-        technologies: React (Tanstack Start), Playwright, Azure DevOps
+        technologies: React (TanStack Start), Playwright, Azure DevOps
         highlights:
           - Mise en place des tests de régression visuelle pour le design system (100+ composants).
           - Développement d'un dashboard de performance (poids, temps de chargement) des assets du design system, utilisé quotidiennement par l'équipe UX.
 
-      - company: "[Folding Art](https://folding-art.fr) / [laine & maille](https://laine-maille.fr)"
-        position: Développeur Full-stack (freelance)
-        start_date: 2024-07
-        end_date: 2025-07
-        location: À distance
-        summary: Développement et maintenance de 2 sites e-commerce (250+ utilisateurs chacun).
-        technologies: React (Next.js), TailwindCSS
-        highlights:
-          - Déploiement automatisé via CI/CD.
-          - "Gestion de projet de bout en bout : recueil du besoin, développement, mise en production."
-
       - company: "[Overspeed](https://linkedin.com/company/overspeed)"
-        position: Développeur Full-stack
+        position: Développeur Full-Stack
         start_date: 2025-05
-        end_date: 2025-08
+        end_date: 2025-06
         location: Rouen
         summary: Stage de première année de BTS puis repris en tant que prestataire.
         technologies: React (Next.js), Golang (Gin), Docker
@@ -54,23 +55,22 @@ cv:
           - Amélioration du SEO en passant d'une SPA à du SSR.
 
       - company: "[WorldSkills France](https://worldskills-france.org)"
-        position: Compétiteur puis Expert national adjoint
+        position: Compétiteur puis Bénévole
         start_date: 2024-11
         summary: Plus grande compétition des métiers au monde. Je suis impliqué dans la catégorie Développement Web.
         highlights:
-          - Champion régional Normandie (Caen 2024).
-          - Vice-champion de France (Marseille 2025).
-          - Expert national adjoint (bénévole) depuis mars 2026 pour l'édition Orléans 2027.
+          - Vice-champion de France (Marseille 2025) & Champion régional Normandie (Caen 2024).
+          - Expert national adjoint depuis mars 2026 pour l'édition Orléans 2027.
 
     compétences:
       - label: Langages
         details: TypeScript/JavaScript, Golang, C# (.NET), Java, Python, PHP, SQL, HTML/CSS
 
       - label: Technologies Web
-        details: React, Next.js, Écosystème Tanstack, Angular, TailwindCSS, Node.js, Bun, React Native, Tauri
+        details: React, Next.js, Écosystème TanStack, Angular, TailwindCSS, Node.js, Bun, React Native, Tauri
 
       - label: Systèmes & DevOps
-        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD), Docker, GitOps (ArgoCD)
+        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD), Docker, Kubernetes, GitOps (ArgoCD)
 
       - label: Bases de données
         details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
@@ -115,14 +115,6 @@ cv:
         location: Le Mesnil-Esnard
         summary: Option mathématiques approfondies.
 
-      - institution: "[Lycée Galilée](https://galilee.lycee.ac-normandie.fr)"
-        degree: Baccalauréat général
-        area: Maths. et Sciences de l'Ingénieur
-        start_date: 2021
-        end_date: 2024
-        location: Franqueville
-        summary: Mention Bien, Lauréat des Olympiades de Sciences de l'Ingénieur 2024.
-
     langues_/_loisirs:
       - label: Anglais
         details: "[C1](https://cert.efset.org/fr/BwATyb)"
@@ -154,7 +146,7 @@ design:
     top_note: rgb(165, 110, 80)
 
   typography:
-    line_spacing: 0.5em
+    line_spacing: 0.55em
     alignment: left
     date_and_location_column_alignment: right
     font_family:
