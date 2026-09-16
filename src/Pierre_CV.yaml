@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Pierre Houllière
-  headline: Alternance pour octobre 2026 -- Développeur Full Stack -- contrat de 3 ans
+  headline: Apprenti Ingénieur Logiciel
   location: Rouen
   email: contact@houlliere.com
   phone: +33-6-11-77-62-00
@@ -20,10 +20,16 @@ cv:
 
   sections:
     expériences:
+      - company: "[Docaposte Agility](https://docaposte-agility.fr)"
+        position: Ingénieur Logiciel
+        start_date: 2026-09
+        end_date: 2029-10
+        location: Rouen
+        summary: Contrat d'apprentissage. Ingénierie logicielle, architecture et pratiques DevOps.
+
       - company: "[Freelance](https://houlliere.com)"
         position: Développeur Full-Stack
         start_date: 2024-11
-        end_date: 2026-08
         location: À distance
         summary: Gestion de projets de bout en bout pour divers clients en tant qu'entrepreneur individuel.
         technologies: React, TailwindCSS, Golang, Docker, Astro, AWS
@@ -63,23 +69,20 @@ cv:
           - Expert national adjoint depuis mars 2026 pour l'édition Orléans 2027.
 
     compétences:
-      - label: Langages
-        details: TypeScript/JavaScript, Golang, C# (.NET), Java, Python, PHP, SQL, HTML/CSS
+      - label: Ingénierie & Architecture
+        details: Clean Architecture, Domain-Driven Design, Design Patterns, API (REST, GraphQL, gRPC), TDD
 
-      - label: Technologies Web
-        details: React, Next.js, Écosystème TanStack, Angular, TailwindCSS, Node.js, Bun, React Native, Tauri
+      - label: DevOps & Infrastructure
+        details: GNU/Linux, Docker, Kubernetes, CI/CD (GitHub Actions, GitLab CI), GitOps (ArgoCD), Ansible, Proxmox
 
-      - label: Systèmes & DevOps
-        details: GNU/Linux, CI/CD (GitHub Actions, GitLab CI/CD), Docker, Kubernetes, GitOps (ArgoCD)
+      - label: Back-End & Langages
+        details: TypeScript (Node.js, Bun), Golang, PHP (Laravel, Symfony), C# (.NET), Python
+
+      - label: Front-End & Écosystème Web
+        details: React, Next.js, Écosystème TanStack, TailwindCSS, React Native
 
       - label: Bases de données
-        details: PostgreSQL, MySQL/MariaDB, SQL Server, Redis, MongoDB
-
-      - label: Modélisation & Conception
-        details: UML, Merise, Agile Scrum, Clean Code, Design Patterns
-
-      - label: Soft Skills
-        details: Communication, Travail en équipe, Résolution de problèmes, Adaptabilité
+        details: PostgreSQL, MySQL/MariaDB, SQLite, SQL Server, Redis, MongoDB
 
     projets:
       - name: "[Fulgur](https://wiizzl.github.io/fulgur)"
@@ -99,29 +102,27 @@ cv:
         technologies: React Native (Expo), Socket.IO, Mediapipe
 
     formations:
-      - institution: "[CESI](https://cesi.fr/formation/ingenieur-e-informatique-cursus-en-3-ans-par-lapprentissage-2513617)"
-        degree: Diplôme d'Ingénieur
+      - institution: CESI
+        degree: "[Diplôme d'Ingénieur](https://cesi.fr/formation/ingenieur-e-informatique-cursus-en-3-ans-par-lapprentissage-2513617)"
         area: Informatique
         start_date: 2026
         end_date: 2029
         location: Rouen
         summary: Formation en alternance avec un rythme de 1 mois en école pour 1 mois en entreprise.
 
-      - institution: "[Campus La Châtaigneraie](https://la-chataigneraie.org/bts-service-informatiques-organisations-solutions-logicielles-applications-metiers)"
-        degree: BTS SIO
+      - institution: Campus La Châtaigneraie
+        degree: "[BTS SIO](https://la-chataigneraie.org/bts-service-informatiques-organisations-solutions-logicielles-applications-metiers)"
         area: Solutions Logicielles et Applications Métiers
         start_date: 2024
         end_date: 2026
         location: Le Mesnil-Esnard
         summary: Option mathématiques approfondies.
 
-    langues_/_loisirs:
+    langues:
       - label: Anglais
         details: "[C1](https://cert.efset.org/fr/BwATyb)"
       - label: Allemand
         details: A2
-      - label: Sport
-        details: Musculation, Volleyball
 
 design:
   theme: opal
@@ -233,7 +234,7 @@ design:
       main_column: "LABEL : *DETAILS*"
     education_entry:
       main_column: |-
-        INSTITUTION -- DEGREE (AREA)
+        DEGREE (AREA) -- INSTITUTION
         *SUMMARY*
         HIGHLIGHTS
       degree_column:
